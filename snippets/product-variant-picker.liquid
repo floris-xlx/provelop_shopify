@@ -1,11 +1,12 @@
 {% comment %}
-  Renders product variant-picker
+  This snippet renders the product variant picker.
 
-  Accepts:
-  - product: {Object} product object.
-  - block: {Object} passing the block information.
-  - product_form_id: {String} Id of the product form to which the variant picker is associated.
-  - update_url: {Boolean} whether or not to update url when changing variants. If false, the url isn't updated. Default: true (optional).
+  Parameters:
+  - product: {Object} The product object.
+  - block: {Object} The block information.
+  - product_form_id: {String} The ID of the product form associated with the variant picker.
+  - update_url: {Boolean} Optional. Indicates whether to update the URL when changing variants. Defaults to true if not provided.
+  
   Usage:
   {% render 'product-variant-picker', product: product, block: block, product_form_id: product_form_id %}
 {% endcomment %}

@@ -22,7 +22,7 @@
     assign product = block.settings.product
   %}
   {% if product == blank %}
-    <h4 class='center'>Assign the gift product in block settings</h4>
+    <h4 class='center'>Please configure the gift product in the block settings</h4>
   {% else %}
     {% liquid
       assign requirement = block.settings.requirement | times: 100.0

@@ -1,13 +1,13 @@
 {% comment %}
-  Renders facets (filtering and sorting)
+  This snippet handles the rendering of facets, which include filtering and sorting options.
 
-  Accepts:
-  - results: {Object} Collection or Search object
-  - enable_filtering: {Boolean} Show filtering when true
-  - enable_sorting: {Boolean} Show sorting when true
-  - filter_type: {String} Type of filter
+  Parameters:
+  - results: {Object} Represents a Collection or Search object
+  - enable_filtering: {Boolean} Displays filtering options when true
+  - enable_sorting: {Boolean} Displays sorting options when true
+  - filter_type: {String} Specifies the type of filter
 
-  Usage:
+  Example Usage:
   {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, filter_type: 'vertical' %}
 {% endcomment %}
 

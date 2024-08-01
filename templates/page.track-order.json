@@ -12,7 +12,7 @@
             "type": "track-order",
             "settings": {
                 "heading_size": "h1",
-                "text": "<p>Welcome to our tracking page! Here you can easily track the status of your order by simply entering the tracking number we provided in your confirmation email. Stay up-to-date with the latest information on your delivery and ensure a hassle-free experience. Thank you for choosing our services! If you have any questions don't hesitate to contact us.<\/p>",
+                "text": "<p>Welcome to our tracking page! Easily monitor your order status by entering the tracking number from your confirmation email. Stay informed about your delivery and enjoy a seamless experience. Thank you for choosing us! If you have any questions, feel free to contact us.<\/p>",
                 "button_label": "TRACK",
                 "button_full_width": true,
                 "color_scheme": "background-1",
@@ -32,7 +32,7 @@
                 "template--18472096104777__fd57cce8-d801-473c-9554-025221fb7723-1679865021003cfb75-1": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+                        "text": "<p>Combine text with an image to highlight your selected product, collection, or blog post. Include information on availability, style, or even offer a review.<\/p>",
                         "text_style": "body"
                     }
                 },

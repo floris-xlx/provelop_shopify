@@ -1,20 +1,20 @@
 {% comment %}theme-check-disable ImgLazyLoading{% endcomment %}
 {% comment %}
-    Renders a product thumbnail with a modal-opener
+    Displays a product thumbnail with a modal opener.
 
-    Accepts:
-    - media: {Object} Product Media object
-    - media_count: {Number} Number of media objects
-    - position: {String} Position of the media. Used for accessible label.
-    - desktop_layout: {String} Layout of the media for desktop.
-    - mobile_layout: {String} Layout of the media for mobile.
-    - loop: {Boolean} Enable video looping (optional)
-    - modal_id: {String} The product modal that will be shown by clicking the thumbnail
-    - xr_button: {Boolean} Renders the "View in your space" button (shopify-xr-button) if the media is a 3D Model
-    - constrain_to_viewport: {Boolean} Force media height to fit within viewport
-    - media_fit: {String} Method ("contain" or "cover") to fit image into container
+    Parameters:
+    - media: {Object} The product media object.
+    - media_count: {Number} The total number of media objects.
+    - position: {String} The position of the media, used for accessibility labels.
+    - desktop_layout: {String} The layout of the media on desktop.
+    - mobile_layout: {String} The layout of the media on mobile.
+    - loop: {Boolean} Optional. Enables video looping.
+    - modal_id: {String} The ID of the product modal triggered by the thumbnail.
+    - xr_button: {Boolean} Renders the "View in your space" button (shopify-xr-button) if the media is a 3D model.
+    - constrain_to_viewport: {Boolean} Forces the media height to fit within the viewport.
+    - media_fit: {String} The method ("contain" or "cover") to fit the image into the container.
     - media_width: {Float} The width percentage that the media column occupies on desktop.
-    - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
+    - lazy_load: {Boolean} Optional. Indicates if the image should be lazy loaded. Default is true.
 
     Usage:
     {% render 'product-thumbnail',

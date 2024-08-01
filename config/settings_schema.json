@@ -1,11 +1,11 @@
 [
     {
         "name": "theme_info",
-        "theme_name": "Provelop",
+        "theme_name": "Dropship Academy",
         "theme_version": "0",
-        "theme_author": "Provelop",
-        "theme_documentation_url": "https:\/\/provelop.co\/",
-        "theme_support_url": "https:\/\/provelop.co\/pages\/contact"
+        "theme_author": "Dropship Academy",
+        "theme_documentation_url": "https:\/\/dropshipacademy.nl\/",
+        "theme_support_url": "https:\/\/dropshipacademy.nl\/"
     },
     {
         "name": "Authentication",
@@ -14,7 +14,7 @@
                 "type": "text",
                 "id": "animations_type",
                 "label": "Authentication token",
-                "info": "Refresh the page if the error message doesnt disappear after entering your token."
+                "info": "If the error message persists after entering your token, please refresh the page."
             }
         ]
     },
@@ -23,7 +23,7 @@
         "settings": [
             {
                 "type": "paragraph",
-                "content": "Full theme guide can be viewed [here](https:\/\/provelop.co\/)."
+                "content": "Full theme guide can be viewed [here](https:\/\/dropshipacademy.nl\/)."
             }
         ]
     },
@@ -33,7 +33,7 @@
             {
                 "type": "checkbox",
                 "id": "disable_inspect",
-                "label": "Disable copying text, downloading images and opening Inspect element",
+                "label": "Prevent text copying, image downloading, and Inspect element access",
                 "default": true
             },
             {
@@ -42,7 +42,7 @@
             },
             {
                 "type": "paragraph",
-                "content": "Block your store from countries that you aren't targeting to decrease the amount of competitors visiting your store."
+                "content": "Restrict access to your store from non-targeted countries to reduce competitor visits."
             },
             {
                 "type": "select",
@@ -58,14 +58,14 @@
                         "label": "Whitelist"
                     }
                 ],
-                "info": "\"Block\" blocks selected countries from the list, \"Whitelist\" only allows the countries from the list.",
+                "info": "\"Block\" prevents access from the selected countries, while \"Whitelist\" permits access only to the selected countries.",
                 "default": "block"
             },
             {
                 "type": "text",
                 "id": "country_list",
                 "label": "Country codes list",
-                "info": "Country codes in Alpha-2 code format, split by comma. View all country codes [here](https:\/\/www.iban.com\/country-codes). Example: \"US, GB\""
+                "info": "Enter country codes in Alpha-2 format, separated by commas. See all country codes [here](https:\/\/www.iban.com\/country-codes). Example: \"US, GB\""
             },
             {
                 "type": "richtext",
@@ -218,7 +218,7 @@
                 "type": "text",
                 "id": "custom_header_font_link",
                 "label": "Custom font link",
-                "info": "Upload the font file to Shopify admin > Content > Files. The file name must not have any spaces, hyphens, underscores etc."
+                "info": "Upload the font file to Shopify admin > Content > Files. Ensure the file name does not contain spaces, hyphens, underscores, or other special characters."
             },
             {
                 "type": "text",
@@ -283,7 +283,7 @@
                 "type": "text",
                 "id": "custom_body_font_link",
                 "label": "Custom font link",
-                "info": "Upload the font file to Shopify admin > Content > Files. The file name must not have any spaces, hyphens, underscores etc."
+                "info": "Upload the font file to Shopify admin > Content > Files. Ensure the file name does not contain spaces, hyphens, or underscores."
             },
             {
                 "type": "text",
@@ -455,7 +455,7 @@
                 ],
                 "default": "bottom left",
                 "label": "t:settings_schema.badges.settings.position.label",
-                "info": "Badge position for product cards is adjusted separately in Theme settings > Product cards"
+                "info": "You can adjust the badge position for product cards separately in Theme settings > Product cards"
             },
             {
                 "type": "range",
@@ -492,7 +492,7 @@
                 "id": "sale_badge_text",
                 "label": "Sale badge text",
                 "default": "SAVE [percentage]",
-                "info": "Use [percentage] to display the percentage saved and [amount] to display the amount of money saved."
+                "info": "Insert [percentage] to show the saved percentage and [amount] to show the saved money."
             },
             {
                 "type": "checkbox",

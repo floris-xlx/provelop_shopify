@@ -10,17 +10,17 @@
     assign items_count = items_count | plus: 1
   endif
   if block.settings.show_custom_bg or block.settings.color_scheme != 'background-1' or block.settings.border_width > 0
-   assign padding_class = ' review-item--padding'
+    assign padding_class = ' review-item--padding'
   endif
-  if items_count > 1 
+  if items_count > 1
     assign show_slider = true
   endif
-  if block.settings.display_arrows 
+  if block.settings.display_arrows
     assign arrows_class = 'under'
   else
     assign arrows_class = 'hidden'
   endif
-  if block.settings.display_dots 
+  if block.settings.display_dots
     assign dots_class = 'under'
   else
     assign dots_class = 'hidden'
@@ -51,7 +51,7 @@
   <path fill='{{ block.settings.checkmark_icon_color }}' d="M37.92,65c-6.07-6.53,3.25-16.26,10-10.1,2.38,2.17,5.84,5.34,8.24,7.49L74.66,39.66C81.1,33,91.27,42.78,84.91,49.48L61.67,77.2a7.13,7.13,0,0,1-9.9.44C47.83,73.89,42.05,68.5,37.92,65Z"/>
 </svg>
 {% endcapture %}
-<div 
+<div
   class="review-items-container{% if show_slider %} side-margins-negative{% endif %}"
   style="
     --star-color:{{ block.settings.star_color }};
@@ -62,7 +62,7 @@
     --border-color: {{ block.settings.border_color }};
     --margin-top: {{ block.settings.margin_top | divided_by: 10.0 }}rem;
     --margin-bottom: {{ block.settings.margin_bottom | divided_by: 10.0 }}rem;
-  " 
+  "
   {{ block.shopify_attributes }}
 >
   {% if show_slider %}
@@ -71,9 +71,9 @@
       assign gap = '45'
     %}
     <splide-component
-      data-type='{{ block.settings.slider_type }}'
-      data-autoplay='{{ block.settings.autoplay }}'
-      data-autoplay-speed='{{ block.settings.autoplay_speed }}'
+      data-type="{{ block.settings.slider_type }}"
+      data-autoplay="{{ block.settings.autoplay }}"
+      data-autoplay-speed="{{ block.settings.autoplay_speed }}"
       data-gap-desktop="{{ gap }}"
       data-gap-mobile="{{ gap }}"
       data-side-padding-desktop="{{ side_padding }}"
@@ -82,8 +82,12 @@
       data-slides-mobile="1"
       style="--columns-desktop:1;--columns-mobile:1;--gap-desktop:{{ gap }}px;--gap-mobile:{{ gap }}px;--padding-desktop:{{ side_padding }}px;--padding-mobile:{{ side_padding }}px;"
     >
-      <div class='splide splide--precalc-width splide--precalc-padding splide--small-pagination splide--desktop-dots-{{ dots_class }} splide--mobile-dots-{{ dots_class }} splide--desktop-arrows-{{ arrows_class }} splide--mobile-arrows-{{ arrows_class }}' data-desktop-adaptive-height="true" data-mobile-adaptive-height="true">
-        <div class='splide__track'>
+      <div
+        class="splide splide--precalc-width splide--precalc-padding splide--small-pagination splide--desktop-dots-{{ dots_class }} splide--mobile-dots-{{ dots_class }} splide--desktop-arrows-{{ arrows_class }} splide--mobile-arrows-{{ arrows_class }}"
+        data-desktop-adaptive-height="true"
+        data-mobile-adaptive-height="true"
+      >
+        <div class="splide__track">
           <ul class="splide__list">
   {% endif %}
   {% for i in (1..items_count) %}
@@ -102,47 +106,49 @@
         assign text = block.settings.text_3
       endif
     %}
-      {% if show_slider %}
-        <li class="splide__slide">
-          <div class="splide__slide__container">
-      {% endif %}
-          <div class="review-item review-item--{{ block.settings.avatar_alignment }}{{ padding_class }} custom-border-radius custom-border-hex{% if block.settings.show_custom_bg %} custom-bg{% endif %} color-{{ block.settings.color_scheme }}">
-            {%- unless image == blank -%}
-              <div class="review-item__image media media--transparent custom-border-radius" style='--border-radius: {{ block.settings.avatar_corner_radius | divided_by: 10.0 }}rem;'>
-                <img
-                  src="{{ image | image_url }}"
-                  alt="{{ image }}"
-                  width="auto"
-                  height="auto"
-                  loading="lazy"
-                >
-              </div>
-            {%- endunless -%}
-            <div class="review-item__right">
-              <div class="review-item__text">
-                {{ text }}
-              </div>
-              {%- unless author == blank -%}
-                <div class="review-item__author">
-                  {{ author | replace: '[stars]', stars | replace: '[checkmark]', checkmark }}
-                </div>
-              {%- endunless -%}
-            </div>
-          </div>
     {% if show_slider %}
+      <li class="splide__slide">
+        <div class="splide__slide__container">
+    {% endif %}
+    <div class="review-item review-item--{{ block.settings.avatar_alignment }}{{ padding_class }} custom-border-radius custom-border-hex{% if block.settings.show_custom_bg %} custom-bg{% endif %} color-{{ block.settings.color_scheme }}">
+      {%- unless image == blank -%}
+        <div
+          class="review-item__image media media--transparent custom-border-radius"
+          style="--border-radius: {{ block.settings.avatar_corner_radius | divided_by: 10.0 }}rem;"
+        >
+          <img
+            src="{{ image | image_url }}"
+            alt="{{ image }}"
+            width="auto"
+            height="auto"
+            loading="lazy"
+          >
         </div>
+      {%- endunless -%}
+      <div class="review-item__right">
+        <div class="review-item__text">
+          {{ text }}
+        </div>
+        {%- unless author == blank -%}
+          <div class="review-item__author">
+            {{ author | replace: '[stars]', stars | replace: '[checkmark]', checkmark }}
+          </div>
+        {%- endunless -%}
+      </div>
+    </div>
+    {% if show_slider %}
+      </div>
       </li>
     {% endif %}
   {% endfor %}
   {% if show_slider %}
-          </ul>
-        </div>
-        <div class='splide__dots-and-arrows'>
-          <ul class="splide__pagination"></ul>
-          <div class="splide__arrows"></div>
-        </div>
-      </div>
+    </ul>
+    </div>
+    <div class="splide__dots-and-arrows">
+      <ul class="splide__pagination"></ul>
+      <div class="splide__arrows"></div>
+    </div>
+    </div>
     </splide-component>
   {% endif %}
 </div>
-

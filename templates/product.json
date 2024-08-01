@@ -59,7 +59,7 @@
                         "breaks_space_images": true,
                         "breaks_labels": "[name], [name], [name]",
                         "breaks_benefits": "[empty], Free Shipping, Free Shipping",
-                        "breaks_captions": "Variant 1 caption, Variant 2 caption, Variant 3 caption",
+                        "breaks_captions": "Caption for Variant 1, Caption for Variant 2, Caption for Variant 3",
                         "breaks_price_texts": "[price], [price], [price]",
                         "breaks_compare_price_texts": "[compare_price], [compare_price], [compare_price]",
                         "margin_top": 15,
@@ -237,12 +237,12 @@
                         "autoplay_speed": 5,
                         "display_arrows": false,
                         "display_dots": true,
-                        "author_1": "<em>Author<\/em>",
-                        "text_1": "<p>Share positive thoughts and feedback from your customer.<\/p>",
-                        "author_2": "<em>Author<\/em>",
-                        "text_2": "<p>Share positive thoughts and feedback from your customer.<\/p>",
-                        "author_3": "<em>Author<\/em>",
-                        "text_3": "<p>Share positive thoughts and feedback from your customer.<\/p>",
+                        "author_1": "<em>Reviewer<\/em>",
+                        "text_1": "<p>Provide positive feedback and testimonials from your clients.<\/p>",
+                        "author_2": "<em>Reviewer<\/em>",
+                        "text_2": "<p>Provide positive feedback and testimonials from your clients.<\/p>",
+                        "author_3": "<em>Reviewer<\/em>",
+                        "text_3": "<p>Provide positive feedback and testimonials from your clients.<\/p>",
                         "margin_top": 24,
                         "margin_bottom": 24
                     }
@@ -365,7 +365,7 @@
                     "settings": {
                         "column": "col_1",
                         "visibility": "always-display",
-                        "text": "<p>Use the flexible grid system to create any layout. Each block can be placed in any of the columns.<\/p>",
+                        "text": "<p>Utilize the adaptable grid system to design any layout. Each block can be positioned in any of the columns.<\/p>",
                         "text_style": "body",
                         "alignment": "center",
                         "mobile_alignment": "mobile-center",
@@ -386,7 +386,7 @@
                         "icon_heading_size": "h3",
                         "icon_text_alignment": "left",
                         "title": "Icon with text",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<\/p>",
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post<\/p>",
                         "margin_top": 20,
                         "margin_bottom": 30
                     }
@@ -404,7 +404,7 @@
                         "icon_heading_size": "h3",
                         "icon_text_alignment": "left",
                         "title": "Icon with text",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<\/p>",
+                        "text": "<p>Combine text with an icon to emphasize your selected product, collection, or blog post<\/p>",
                         "margin_top": 20,
                         "margin_bottom": 20
                     }
@@ -435,7 +435,7 @@
                         "icon_heading_size": "h3",
                         "icon_text_alignment": "left",
                         "title": "Icon with text",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<\/p>",
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post<\/p>",
                         "margin_top": 20,
                         "margin_bottom": 30
                     }
@@ -453,7 +453,7 @@
                         "icon_heading_size": "h3",
                         "icon_text_alignment": "left",
                         "title": "Icon with text",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<\/p>",
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post<\/p>",
                         "margin_top": 20,
                         "margin_bottom": 20
                     }
@@ -622,7 +622,7 @@
                         "icon": "check_circle",
                         "filled_icon": false,
                         "title": "Icon with text",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<\/p>"
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post<\/p>"
                     }
                 },
                 "template--21507361800487__4fc05ee5-1c30-4863-b88f-81cb6fa7c41a-heading-1": {
@@ -636,7 +636,7 @@
                 "template--21507361800487__4fc05ee5-1c30-4863-b88f-81cb6fa7c41a-text-1": {
                     "type": "text",
                     "settings": {
-                        "text": "<p>Pair icons with content to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+                        "text": "<p>Combine icons with content to highlight your selected product, collection, or blog post. Include information on availability, style, or even offer a review.<\/p>",
                         "text_style": "body"
                     }
                 },
@@ -689,7 +689,7 @@
                     "type": "column",
                     "settings": {
                         "title": "Heading",
-                        "text": "<p>Share positive thoughts and feedback from your customer..<\/p>",
+                        "text": "<p>Provide positive comments and testimonials from your clients.<\/p>",
                         "author": "<em><strong>Author<\/strong><\/em>"
                     }
                 },
@@ -697,7 +697,7 @@
                     "type": "column",
                     "settings": {
                         "title": "Heading",
-                        "text": "<p>Share positive thoughts and feedback from your customer..<\/p>",
+                        "text": "<p>Share uplifting comments and reviews from your clients.<\/p>",
                         "author": "<em><strong>Author<\/strong><\/em>"
                     }
                 },
@@ -705,7 +705,7 @@
                     "type": "column",
                     "settings": {
                         "title": "Heading",
-                        "text": "<p>Share positive thoughts and feedback from your customer..<\/p>",
+                        "text": "<p>Share uplifting comments and reviews from your clients.<\/p>",
                         "author": "<em><strong>Author<\/strong><\/em>"
                     }
                 }

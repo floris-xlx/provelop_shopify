@@ -9,7 +9,7 @@
                         "image_overlay_opacity": 0,
                         "heading": "Image slide",
                         "heading_size": "h1",
-                        "subheading": "Tell your brand's story through images",
+                        "subheading": "Convey your brand's narrative with visuals",
                         "button_label": "Button label",
                         "link": "",
                         "button_style_secondary": false,
@@ -30,7 +30,7 @@
                         "image_overlay_opacity": 0,
                         "heading": "Image slide",
                         "heading_size": "h1",
-                        "subheading": "Tell your brand's story through images",
+                        "subheading": "Convey your brand's narrative with visuals",
                         "button_label": "Button label",
                         "link": "",
                         "button_style_secondary": false,
@@ -60,7 +60,7 @@
                 "change_slides_speed": 5,
                 "show_text_below": true,
                 "mobile_pagination_position": "under",
-                "accessibility_info": "Slideshow about our brand"
+                "accessibility_info": "Brand slideshow"
             }
         },
         "d2d3417b-e92f-428c-b221-5bceffb552be": {
@@ -101,7 +101,7 @@
                 "visibility": "always-display",
                 "title": "Comparison table",
                 "heading_size": "h1",
-                "text": "<p>Talk about how and why is your brand better than the others.<\/p>",
+                "text": "<p>Discuss the reasons and ways your brand stands out compared to others.<\/p>",
                 "button_label": "",
                 "link": "",
                 "button_style_secondary": false,
@@ -144,7 +144,7 @@
                         "icon": "check_circle",
                         "filled_icon": false,
                         "title": "Icon",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<p>"
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post.<p>"
                     }
                 },
                 "template--21507361505575__6aa09428-a417-429d-9159-a4e8afd49590-column-2": {
@@ -153,7 +153,7 @@
                         "icon": "check_circle",
                         "filled_icon": false,
                         "title": "Icon",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<p>"
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post.<p>"
                     }
                 },
                 "template--21507361505575__6aa09428-a417-429d-9159-a4e8afd49590-column-3": {
@@ -162,7 +162,7 @@
                         "icon": "check_circle",
                         "filled_icon": false,
                         "title": "Icon",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<p>"
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post.<p>"
                     }
                 },
                 "template--21507361505575__6aa09428-a417-429d-9159-a4e8afd49590-column-4": {
@@ -171,7 +171,7 @@
                         "icon": "check_circle",
                         "filled_icon": false,
                         "title": "Icon",
-                        "text": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<p>"
+                        "text": "<p>Combine text with an icon to highlight your selected product, collection, or blog post.<p>"
                     }
                 }
             },
@@ -225,21 +225,21 @@
                     "type": "row",
                     "settings": {
                         "percentage": 90,
-                        "row_text": "<p>Noticed that this product has significantly improved their life.<\/p>"
+                        "row_text": "<p>Recognized a substantial enhancement in their life due to this product.<\/p>"
                     }
                 },
                 "template--21507361505575__0f1fc9e4-bc4c-4052-9747-62d1f8472caa-row-2": {
                     "type": "row",
                     "settings": {
                         "percentage": 90,
-                        "row_text": "<p>Noticed that this product has significantly improved their life.<\/p>"
+                        "row_text": "<p>Observed a significant enhancement in their life due to this product.<\/p>"
                     }
                 },
                 "template--21507361505575__0f1fc9e4-bc4c-4052-9747-62d1f8472caa-row-3": {
                     "type": "row",
                     "settings": {
                         "percentage": 90,
-                        "row_text": "<p>Noticed that this product has significantly improved their life.<\/p>"
+                        "row_text": "<p>Observed a significant improvement in their life due to this product.<\/p>"
                     }
                 }
             },
@@ -253,13 +253,13 @@
                 "visibility": "always-display",
                 "title": "Results",
                 "heading_size": "h1",
-                "text": "<p>Talk about results of your customers and how your product improved their life.<\/p>",
+                "text": "<p>Discuss the positive impact your product has had on your customers' lives.<\/p>",
                 "color_scheme": "background-1",
                 "layout": "results_second",
                 "results_headline": "Results heading",
                 "results_headline_size": "h2",
                 "results_headline_alignment": "left",
-                "caption": "<p>Caption about the results and\/or link for their proof.<\/p>",
+                "caption": "<p>Details about the results and/or a link to their evidence.<\/p>",
                 "button_label": "",
                 "link": "",
                 "button_style_secondary": false,
