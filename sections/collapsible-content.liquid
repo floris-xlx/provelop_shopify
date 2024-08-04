@@ -26,8 +26,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="collapsible-content collapsible-{{ section.settings.layout }}-layout isolate{% if section.settings.layout == 'section' %} page-width{% elsif section.settings.layout == 'none' %} content-container content-container--full-width{% endif %}">
@@ -155,8 +155,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -165,23 +165,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "text",
@@ -191,14 +191,14 @@
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "Collapsible content",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "default": "Inklapbare inhoud",
+      "label": "Koptekst",
+      "info": "Vetgedrukte woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Koptekst markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -207,36 +207,36 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Koptekst grootte"
     },
     {
       "type": "select",
       "id": "heading_alignment",
-      "label": "Heading alignment",
+      "label": "Uitlijning koptekst",
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Links"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Midden"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "Rechts"
         }
       ],
       "default": "center"
@@ -275,24 +275,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "select",
@@ -308,24 +308,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-2",
-      "label": "Container color scheme",
-      "info": "Visible when Layout is set to Row or Section container. Custom color scheme is edited at the bottom of section settings."
+      "label": "Container kleurschema",
+      "info": "Zichtbaar wanneer Lay-out is ingesteld op Rij of Sectiecontainer. Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "checkbox",
@@ -344,13 +344,13 @@
     },
     {
       "type": "header",
-      "content": "Or"
+      "content": "Of"
     },
     {
       "type": "video",
       "id": "video",
       "label": "Video",
-      "info": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+      "info": "Gebruik autoplay mp4 in plaats van GIF's & geanimeerde WEBP's."
     },
     {
       "type": "select",
@@ -358,19 +358,19 @@
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to media"
+          "label": "Aanpassen aan media"
         },
         {
           "value": "small",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "adapt",
-      "label": "Media height"
+      "label": "Media hoogte"
     },
     {
       "type": "select",
@@ -378,37 +378,37 @@
       "options": [
         {
           "value": "image_first",
-          "label": "Media first"
+          "label": "Media eerst"
         },
         {
           "value": "image_second",
-          "label": "Media second"
+          "label": "Media tweede"
         }
       ],
       "default": "image_second",
-      "label": "Desktop layout",
-      "info": "Media is always first on mobile."
+      "label": "Desktop lay-out",
+      "info": "Media is altijd eerst op mobiel."
     },
     {
       "type": "header",
-      "content": "Rows"
+      "content": "Rijen"
     },
     {
       "type": "select",
       "id": "row_heading_size",
-      "label": "Heading size",
+      "label": "Koptekst grootte",
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "medium",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "medium"
@@ -416,11 +416,11 @@
     {
       "type": "select",
       "id": "collapse_icon",
-      "label": "Collapse icon",
+      "label": "Inklap icoon",
       "options": [
         {
           "value": "carret",
-          "label": "Carret"
+          "label": "Caret"
         },
         {
           "value": "plus",
@@ -432,9 +432,9 @@
     {
       "type": "checkbox",
       "id": "display_top_border",
-      "label": "Display top border",
+      "label": "Bovenrand weergeven",
       "default": true,
-      "info": "This option is automatically optimized for stacked rows."
+      "info": "Deze optie is automatisch geoptimaliseerd voor gestapelde rijen."
     },
     {
       "type": "header",
@@ -462,49 +462,49 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "header",
-      "content": "Custom container color scheme",
-      "info": "Applied if Container color scheme setting is set to Custom."
+      "content": "Aangepast container kleurschema",
+      "info": "Toegepast als de instelling Container kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_contaner_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_container_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_contaner_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
@@ -515,6 +515,7 @@
         {
           "type": "text",
           "id": "heading",
+          "default": "Inklapbare rij",
           "default": "Collapsible row",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.label",
           "info": "t:sections.collapsible_content.blocks.collapsible_row.settings.heading.info"
