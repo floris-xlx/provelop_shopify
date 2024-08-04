@@ -27,6 +27,7 @@ class CartDrawer extends HTMLElement {
     if (triggeredBy) this.setActiveElement(triggeredBy);
     const cartDrawerNote = this.querySelector('[id^="Details-"] summary');
     if (cartDrawerNote && !cartDrawerNote.hasAttribute('role')) this.setSummaryAccessibility(cartDrawerNote);
+    // here the animation doesn't seem to always get triggered. A timeout seem to help
     setTimeout(() => {
       this.classList.add('animate', 'active');
     });
@@ -68,7 +69,6 @@ class CartDrawer extends HTMLElement {
   }
 
   renderContents(parsedState) {
-    console.log('Rendering contents', parsedState);
     this.querySelector('.drawer__inner').classList.contains('is-empty') &&
       this.querySelector('.drawer__inner').classList.remove('is-empty');
     this.productId = parsedState.id;
@@ -131,7 +131,9 @@ class CartDrawerItems extends CartItems {
 
 customElements.define('cart-drawer-items', CartDrawerItems);
 
-// Cart.js part
+
+This is my cart.js
+
 class CartRemoveButton extends HTMLElement {
   constructor() {
     super();
@@ -177,7 +179,6 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    console.log('onChange event', event);
     this.updateQuantity(
       event.target.dataset.index,
       event.target.value,
@@ -187,7 +188,6 @@ class CartItems extends HTMLElement {
   }
 
   onCartUpdate() {
-    console.log('onCartUpdate');
     if (this.tagName === 'CART-DRAWER-ITEMS') {
       fetch(`${routes.cart_url}?section_id=cart-drawer`)
         .then((response) => response.text())
@@ -245,7 +245,6 @@ class CartItems extends HTMLElement {
   }
 
   updateQuantity(line, quantity, name, variantId) {
-    console.log('Updating quantity:', line, quantity, name, variantId);
     this.enableLoading(line);
 
     const body = JSON.stringify({
