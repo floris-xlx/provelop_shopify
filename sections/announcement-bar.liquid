@@ -208,12 +208,12 @@
   "settings": [
     {
       "type": "header",
-      "content": "Layout"
+      "content": "Indeling"
     },
     {
       "type": "range",
       "id": "columns_desktop",
-      "label": "Columns desktop",
+      "label": "Kolommen desktop",
       "min": 0,
       "max": 6,
       "step": 1,
@@ -222,7 +222,7 @@
     {
       "type": "range",
       "id": "columns_mobile",
-      "label": "Columns mobile",
+      "label": "Kolommen mobiel",
       "min": 0,
       "max": 3,
       "step": 1,
@@ -230,7 +230,7 @@
     },
     {
       "type": "paragraph",
-      "content": "Note: Zet nummer van columns tot 0 om alle blocken te auto fitten in het midden."
+      "content": "Opmerking: Zet het aantal kolommen op 0 om alle blokken automatisch in het midden te plaatsen."
     },
     {
       "type": "range",
@@ -239,7 +239,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Desktop spacing",
+      "label": "Desktop ruimte",
       "default": 28
     },
     {
@@ -249,13 +249,13 @@
       "max": 50,
       "step": 2,
       "unit": "px",
-      "label": "Mobile spacing",
+      "label": "Mobiele ruimte",
       "default": 16
     },
     {
       "type": "checkbox",
       "id": "show_separator",
-      "label": "Show separator between blocks",
+      "label": "Toon scheiding tussen blokken",
       "default": false
     },
     {
@@ -272,24 +272,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Invers"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "accent-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurenschema",
+      "info": "Aangepast kleurenschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
@@ -298,13 +298,13 @@
     {
       "type": "checkbox",
       "id": "slider_mobile",
-      "label": "Enable mobile slider",
+      "label": "Schakel mobiele slider in",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "slider_desktop",
-      "label": "Enable desktop slider",
+      "label": "Schakel desktop slider in",
       "default": false
     },
     {
@@ -313,15 +313,15 @@
       "options": [
         {
           "value": "slide",
-          "label": "Classic"
+          "label": "Klassiek"
         },
         {
           "value": "loop",
-          "label": "Infinite"
+          "label": "Oneindig"
         },
         {
           "value": "fade",
-          "label": "Fade"
+          "label": "Vervagen"
         }
       ],
       "default": "loop",
@@ -330,7 +330,7 @@
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Enable autoplay",
+      "label": "Schakel autoplay in",
       "default": false
     },
     {
@@ -341,30 +341,30 @@
       "step": 0.5,
       "default": 3,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "Autoplay snelheid"
     },
     {
       "type": "header",
-      "content": "Visibility",
-      "info": "Use this if you want to display/hide this section on certain product page(s)."
+      "content": "Zichtbaarheid",
+      "info": "Gebruik dit als je deze sectie op bepaalde productpagina's wilt weergeven/verbergen."
     },
     {
       "type": "text",
       "id": "hidden_products",
-      "label": "Product pages to hide the section on",
-      "info": "Handles of products to hide the section on, split with a comma."
+      "label": "Productpagina's om de sectie op te verbergen",
+      "info": "Handles van producten om de sectie op te verbergen, gescheiden door een komma."
     },
     {
       "type": "checkbox",
       "id": "enable_specific_display",
-      "label": "Display the section on specific product pages only",
+      "label": "Toon de sectie alleen op specifieke productpagina's",
       "default": false
     },
     {
       "type": "text",
       "id": "displayed_products",
-      "label": "Specific product pages to display the section on",
-      "info": "Applied if the checkbox above is checked. Handles of products to only display the section on, split with a comma."
+      "label": "Specifieke productpagina's om de sectie op weer te geven",
+      "info": "Toegepast als het vakje hierboven is aangevinkt. Handles van producten om de sectie alleen op weer te geven, gescheiden door een komma."
     },
     {
       "type": "header",
@@ -392,41 +392,41 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurenschema",
+      "info": "Toegepast als de instelling Kleurenschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#dd1d1d",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradient achtergrond",
+      "info": "Als toegevoegd, vervangt het de achtergrondkleur waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#FFFFFF",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
     {
       "type": "announcement",
-      "name": "Announcement",
+      "name": "Aankondiging",
       "settings": [
         {
           "type": "header",
-          "content": "Text"
+          "content": "Tekst"
         },
         {
           "type": "inline_richtext",
           "id": "text",
-          "default": "Welcome to our store",
+          "default": "Welkom in onze winkel",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
         },
         {
@@ -447,7 +447,7 @@
             }
           ],
           "default": "center",
-          "label": "Alignment"
+          "label": "Uitlijning"
         },
         {
           "type": "range",
@@ -457,7 +457,7 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Mobile text size"
+          "label": "Mobiele tekstgrootte"
         },
         {
           "type": "range",
@@ -467,29 +467,29 @@
           "step": 1,
           "unit": "px",
           "default": 20,
-          "label": "Desktop text size"
+          "label": "Desktop tekstgrootte"
         },
         {
           "type": "header",
-          "content": "Icon"
+          "content": "Icoon"
         },
         {
           "type": "text",
           "id": "icon",
           "default": "storefront",
-          "label": "Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "Icoon",
+          "info": "[Bekijk alle beschikbare iconen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "Vervuld icoon"
         },
         {
           "type": "image_picker",
           "id": "custom_icon",
-          "label": "Custom icon"
+          "label": "Aangepast icoon"
         },
         {
           "type": "range",
@@ -499,7 +499,7 @@
           "step": 1,
           "unit": "px",
           "default": 20,
-          "label": "Mobile icon size"
+          "label": "Mobiele icoongrootte"
         },
         {
           "type": "range",
@@ -509,20 +509,20 @@
           "step": 1,
           "unit": "px",
           "default": 26,
-          "label": "Desktop icon size"
+          "label": "Desktop icoongrootte"
         },
         {
           "type": "select",
           "id": "desktop_layout",
-          "label": "Desktop layout",
+          "label": "Desktop lay-out",
           "options": [
             {
               "value": "horizontal",
-              "label": "Horizontal"
+              "label": "Horizontaal"
             },
             {
               "value": "vertical",
-              "label": "Vertical"
+              "label": "Verticaal"
             }
           ],
           "default": "horizontal"
@@ -530,79 +530,79 @@
         {
           "type": "select",
           "id": "mobile_layout",
-          "label": "Mobile layout",
+          "label": "Mobiele lay-out",
           "options": [
             {
               "value": "horizontal",
-              "label": "Horizontal"
+              "label": "Horizontaal"
             },
             {
               "value": "vertical",
-              "label": "Vertical"
+              "label": "Verticaal"
             }
           ],
           "default": "horizontal"
         },
         {
           "type": "header",
-          "content": "Visibility",
-          "info": "Use this if you want to display/hide this block on certain product page(s)."
+          "content": "Zichtbaarheid",
+          "info": "Gebruik dit als je dit blok op bepaalde productpagina's wilt weergeven/verbergen."
         },
         {
           "type": "text",
           "id": "hidden_products",
-          "label": "Product pages to hide the block on",
-          "info": "Handles of products to hide the block on, split with a comma."
+          "label": "Productpagina's om het blok op te verbergen",
+          "info": "Handles van producten om het blok op te verbergen, gescheiden door een komma."
         },
         {
           "type": "checkbox",
           "id": "enable_specific_display",
-          "label": "Display the block on specific product pages only",
+          "label": "Toon het blok alleen op specifieke productpagina's",
           "default": false
         },
         {
           "type": "text",
           "id": "displayed_products",
-          "label": "Specific product pages to display the block on",
-          "info": "Applied if the checkbox above is checked. Handles of products to only display the block on, split with a comma."
+          "label": "Specifieke productpagina's om het blok op weer te geven",
+          "info": "Toegepast als het vakje hierboven is aangevinkt. Handles van producten om het blok alleen op weer te geven, gescheiden door een komma."
         }
       ]
     },
     {
       "type": "discount",
-      "name": "Discount code",
+      "name": "Kortingscode",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "code",
           "default": "EXAMPLE10",
-          "label": "Discount code"
+          "label": "Kortingscode"
         },
         {
           "type": "inline_richtext",
           "id": "code_text",
           "default": "<strong>EXAMPLE10</strong>",
-          "label": "Discount code text",
-          "info": "Text to be displayed inside the container"
+          "label": "Tekst kortingscode",
+          "info": "Tekst die binnen de container moet worden weergegeven"
         },
         {
           "type": "inline_richtext",
           "id": "button_label",
-          "default": "Copy code",
-          "label": "Copy button label"
+          "default": "Kopieer code",
+          "label": "Label kopieerknop"
         },
         {
           "type": "checkbox",
           "id": "display_btn_icon",
           "default": true,
-          "label": "Display button icon"
+          "label": "Toon knopicoon"
         },
         {
           "type": "text",
           "id": "success_msg",
-          "default": "Code copied!",
-          "label": "Success message"
+          "default": "Code gekopieerd!",
+          "label": "Succesbericht"
         },
         {
           "type": "range",
@@ -611,7 +611,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Corner radius",
+          "label": "Hoekradius",
           "default": 40
         },
         {
@@ -632,7 +632,7 @@
             }
           ],
           "default": "center",
-          "label": "Alignment"
+          "label": "Uitlijning"
         },
         {
           "type": "range",
@@ -642,7 +642,7 @@
           "step": 1,
           "unit": "px",
           "default": 12,
-          "label": "Mobile text size"
+          "label": "Mobiele tekstgrootte"
         },
         {
           "type": "range",
@@ -652,36 +652,36 @@
           "step": 1,
           "unit": "px",
           "default": 14,
-          "label": "Desktop text size"
+          "label": "Desktop tekstgrootte"
         },
         {
           "type": "header",
-          "content": "Visibility",
-          "info": "Use this if you want to display/hide this block on certain product page(s)."
+          "content": "Zichtbaarheid",
+          "info": "Gebruik dit als je dit blok op bepaalde productpagina's wilt weergeven/verbergen."
         },
         {
           "type": "text",
           "id": "hidden_products",
-          "label": "Product pages to hide the block on",
-          "info": "Handles of products to hide the block on, split with a comma."
+          "label": "Productpagina's om het blok op te verbergen",
+          "info": "Handles van producten om het blok op te verbergen, gescheiden door een komma."
         },
         {
           "type": "checkbox",
           "id": "enable_specific_display",
-          "label": "Display the block on specific product pages only",
+          "label": "Toon het blok alleen op specifieke productpagina's",
           "default": false
         },
         {
           "type": "text",
           "id": "displayed_products",
-          "label": "Specific product pages to display the block on",
-          "info": "Applied if the checkbox above is checked. Handles of products to only display the block on, split with a comma."
+          "label": "Specifieke productpagina's om het blok op weer te geven",
+          "info": "Toegepast als het vakje hierboven is aangevinkt. Handles van producten om het blok alleen op weer te geven, gescheiden door een komma."
         }
       ]
     },
     {
       "type": "socials",
-      "name": "Social media",
+      "name": "Sociale media",
       "limit": 1,
       "settings": [
         {
@@ -706,7 +706,7 @@
             }
           ],
           "default": "center",
-          "label": "Alignment"
+          "label": "Uitlijning"
         },
         {
           "type": "range",
@@ -716,7 +716,7 @@
           "step": 1,
           "unit": "px",
           "default": 20,
-          "label": "Mobile icon size"
+          "label": "Mobiele icoongrootte"
         },
         {
           "type": "range",
@@ -726,30 +726,30 @@
           "step": 1,
           "unit": "px",
           "default": 26,
-          "label": "Desktop icon size"
+          "label": "Desktop icoongrootte"
         },
         {
           "type": "header",
-          "content": "Visibility",
-          "info": "Use this if you want to display/hide this block on certain product page(s)."
+          "content": "Zichtbaarheid",
+          "info": "Gebruik dit als je dit blok op bepaalde productpagina's wilt weergeven/verbergen."
         },
         {
           "type": "text",
           "id": "hidden_products",
-          "label": "Product pages to hide the block on",
-          "info": "Handles of products to hide the block on, split with a comma."
+          "label": "Productpagina's om het blok op te verbergen",
+          "info": "Handles van producten om het blok op te verbergen, gescheiden door een komma."
         },
         {
           "type": "checkbox",
           "id": "enable_specific_display",
-          "label": "Display the block on specific product pages only",
+          "label": "Toon het blok alleen op specifieke productpagina's",
           "default": false
         },
         {
           "type": "text",
           "id": "displayed_products",
-          "label": "Specific product pages to display the block on",
-          "info": "Applied if the checkbox above is checked. Handles of products to only display the block on, split with a comma."
+          "label": "Specifieke productpagina's om het blok op weer te geven",
+          "info": "Toegepast als het vakje hierboven is aangevinkt. Handles van producten om het blok alleen op weer te geven, gescheiden door een komma."
         }
       ]
     }

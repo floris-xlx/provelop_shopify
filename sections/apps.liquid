@@ -1,8 +1,8 @@
 <div class="{% if section.settings.include_margins %}page-width{% endif %}">
   {% if section.settings.display_id %}
     <copy-button class="section-id-btn button" data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click om sectie ID te kopieren</span>
-      <span class="copy-success">ID successvol gekopierd!</span>
+      <span class="copy-text">Klik om sectie ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   {%- for block in section.blocks -%}
@@ -19,7 +19,7 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display Sectie ID",
+      "label": "Toon Sectie ID",
       "info": "ID wordt gebruikt in de sectiegroep sectie om 2 secties samen te voegen. ID kan ook binnen elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
