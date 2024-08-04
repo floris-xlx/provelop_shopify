@@ -1937,23 +1937,23 @@
     },
     {
       "type": "gift",
-      "name": "Free/Conditional gift",
+      "name": "Gratis cadeau",
       "settings": [
         {
           "type": "header",
-          "content": "IMPORTANT NOTES"
+          "content": "BELANGRIJKE OPMERKINGEN"
         },
         {
           "type": "paragraph",
-          "content": "Add a \"cart-hidden\" tag to the product if you don't want to count it in the cart icon bubble (number of items in the cart)."
+          "content": "Voeg een \"cart-hidden\" tag toe aan het product als je niet wilt dat het wordt meegeteld in de winkelwagenpictogram-bubbel (aantal items in de winkelwagen)."
         },
         {
           "type": "paragraph",
-          "content": "All gift products MUST BE UNIQUE. Main product from the product page, products from upsells, bundles and other gifts WON'T WORK."
+          "content": "Alle cadeauproducten MOETEN UNIEK ZIJN. Hoofdproduct van de productpagina, producten van upsells, bundels en andere cadeaus WERKEN NIET."
         },
         {
           "type": "header",
-          "content": "General"
+          "content": "Algemeen"
         },
         {
           "type": "select",
@@ -1961,15 +1961,15 @@
           "options": [
             {
               "value": "body",
-              "label": "Cart body"
+              "label": "Winkelwagen lichaam"
             },
             {
               "value": "footer",
-              "label": "Cart footer"
+              "label": "Winkelwagen voettekst"
             }
           ],
           "default": "body",
-          "label": "Position"
+          "label": "Positie"
         },
         {
           "type": "select",
@@ -1977,27 +1977,27 @@
           "options": [
             {
               "value": "globally",
-              "label": "Globally"
+              "label": "Globaal"
             },
             {
               "value": "specific_products",
-              "label": "Specific products"
+              "label": "Specifieke producten"
             }
           ],
           "default": "globally",
-          "label": "Display",
-          "info": "\"Globally\" displays the block scross all pages in the store, \"Specific products\" dispalys it only on specific product pages configured bellow."
+          "label": "Weergave",
+          "info": "\"Globaal\" toont het blok op alle pagina's in de winkel, \"Specifieke producten\" toont het alleen op specifieke productpagina's die hieronder zijn geconfigureerd."
         },
         {
           "type": "text",
           "id": "display_product_handles",
-          "label": "Products to display the block on",
-          "info": "Handles of specific products you want to display the block on, split by comma without spacing in between. Example: \"first-handle, second-handle\"."
+          "label": "Producten om het blok op weer te geven",
+          "info": "Handles van specifieke producten waarop je het blok wilt weergeven, gescheiden door komma's zonder spaties ertussen. Voorbeeld: \"eerste-handle, tweede-handle\"."
         },
         {
           "type": "select",
           "id": "accent_color",
-          "label": "Accent color",
+          "label": "Accentkleur",
           "options": [
             {
               "value": "accent-1",
@@ -2009,11 +2009,11 @@
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "Omlijning knop"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "Tekst"
             }
           ],
           "default": "accent-1"
@@ -2044,7 +2044,7 @@
             }
           ],
           "default": "background-2",
-          "label": "Color scheme"
+          "label": "Kleurschema"
         },
         {
           "type": "header",
@@ -2058,39 +2058,39 @@
         {
           "type": "image_picker",
           "id": "product_image",
-          "label": "Featured image",
-          "info": "If empty, default product image will be shown."
+          "label": "Uitgelichte afbeelding",
+          "info": "Als leeg, wordt de standaard productafbeelding getoond."
         },
         {
           "type": "inline_richtext",
           "id": "locked_product_desc",
-          "label": "Product description",
-          "default": "Write a short description about your product"
+          "label": "Productbeschrijving",
+          "default": "Schrijf een korte beschrijving over je product"
         },
         {
           "type": "header",
-          "content": "Unlocking"
+          "content": "Ontgrendelen"
         },
         {
           "type": "text",
           "id": "requirement",
-          "label": "Unlock requirement",
-          "info": "Required cart subtotal to unlock the gift. If set to 0, the gift is unlocked automatically.",
+          "label": "Ontgrendel vereiste",
+          "info": "Vereiste winkelwagensubtotaal om het cadeau te ontgrendelen. Als ingesteld op 0, wordt het cadeau automatisch ontgrendeld.",
           "default": "80"
         },
         {
           "type": "text",
           "id": "locked_progress_text",
-          "label": "Progress text",
-          "default": "You're [amount] away from a free gift!",
-          "info": "Use [amount] to display the remaining amount to unlock the gift."
+          "label": "Voortgangstekst",
+          "default": "Je bent [amount] verwijderd van een gratis cadeau!",
+          "info": "Gebruik [amount] om het resterende bedrag weer te geven om het cadeau te ontgrendelen."
         },
         {
           "type": "text",
           "id": "unlocked_progress_text",
-          "label": "Unlocked text",
-          "default": "Congrats! You unlocked a free gift!🎉",
-          "info": "Displayed after the gift is unlocked."
+          "label": "Ontgrendelde tekst",
+          "default": "Gefeliciteerd! Je hebt een gratis cadeau ontgrendeld!🎉",
+          "info": "Wordt weergegeven nadat het cadeau is ontgrendeld."
         },
         {
           "type": "range",
@@ -2100,7 +2100,7 @@
           "step": 1,
           "unit": "px",
           "default": 13,
-          "label": "Mobile progress text size"
+          "label": "Mobiele voortgangstekst grootte"
         },
         {
           "type": "range",
@@ -2110,22 +2110,22 @@
           "step": 1,
           "unit": "px",
           "default": 15,
-          "label": "Desktop progress text size"
+          "label": "Desktop voortgangstekst grootte"
         },
         {
           "type": "checkbox",
           "id": "show_image_locked_overlay",
-          "label": "Show image locked overlay",
+          "label": "Toon afbeelding vergrendelde overlay",
           "default": true
         },
         {
           "type": "header",
-          "content": "Layout"
+          "content": "Lay-out"
         },
         {
           "type": "checkbox",
           "id": "show_image",
-          "label": "Show product image",
+          "label": "Toon productafbeelding",
           "default": true
         },
         {
@@ -2134,11 +2134,11 @@
           "options": [
             {
               "value": "3.5",
-              "label": "Extra small"
+              "label": "Extra klein"
             },
             {
               "value": "4.25",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "5",
@@ -2146,15 +2146,15 @@
             },
             {
               "value": "5.75",
-              "label": "Large"
+              "label": "Groot"
             },
             {
               "value": "6.5",
-              "label": "Extra large"
+              "label": "Extra groot"
             }
           ],
           "default": "5",
-          "label": "Image size"
+          "label": "Afbeeldingsgrootte"
         },
         {
           "type": "range",
@@ -2163,7 +2163,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Image corner radius",
+          "label": "Hoekradius afbeelding",
           "default": 2
         },
         {
@@ -2172,11 +2172,11 @@
           "options": [
             {
               "value": "1",
-              "label": "Extra small"
+              "label": "Extra klein"
             },
             {
               "value": "1.2",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "1.4",
@@ -2184,15 +2184,15 @@
             },
             {
               "value": "1.6",
-              "label": "Large"
+              "label": "Groot"
             },
             {
               "value": "1.8",
-              "label": "Extra large"
+              "label": "Extra groot"
             }
           ],
           "default": "1.4",
-          "label": "Product title font size"
+          "label": "Producttitel lettergrootte"
         },
         {
           "type": "select",
@@ -2200,11 +2200,11 @@
           "options": [
             {
               "value": "0.9",
-              "label": "Extra small"
+              "label": "Extra klein"
             },
             {
               "value": "1.05",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "1.2",
@@ -2212,15 +2212,15 @@
             },
             {
               "value": "1.35",
-              "label": "Large"
+              "label": "Groot"
             },
             {
               "value": "1.5",
-              "label": "Extra large"
+              "label": "Extra groot"
             }
           ],
           "default": "1.2",
-          "label": "Description font size"
+          "label": "Beschrijving lettergrootte"
         },
         {
           "type": "select",
@@ -2228,19 +2228,19 @@
           "options": [
             {
               "value": "next_to_title",
-              "label": "Next to title"
+              "label": "Naast titel"
             },
             {
               "value": "separate",
-              "label": "Separate"
+              "label": "Gescheiden"
             },
             {
               "value": "hidden",
-              "label": "Hidden"
+              "label": "Verborgen"
             }
           ],
           "default": "separate",
-          "label": "Price position"
+          "label": "Prijspositie"
         },
         {
           "type": "select",
@@ -2248,22 +2248,22 @@
           "options": [
             {
               "value": "text",
-              "label": "Text"
+              "label": "Tekst"
             },
             {
               "value": "number",
-              "label": "Regular price"
+              "label": "Reguliere prijs"
             }
           ],
           "default": "text",
-          "label": "Regular price content"
+          "label": "Reguliere prijs inhoud"
         },
         {
           "type": "text",
           "id": "displayed_price_text",
-          "label": "Regular price text",
-          "default": "FREE",
-          "info": "Displayed instead of the regular price (eg. $0.00) if \"Regular price conten\" is set to  \"Text\"."
+          "label": "Reguliere prijs tekst",
+          "default": "GRATIS",
+          "info": "Wordt weergegeven in plaats van de reguliere prijs (bijv. $0.00) als \"Reguliere prijs inhoud\" is ingesteld op \"Tekst\"."
         },
         {
           "type": "select",
@@ -2271,11 +2271,11 @@
           "options": [
             {
               "value": "1",
-              "label": "Extra small"
+              "label": "Extra klein"
             },
             {
               "value": "1.2",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "1.4",
@@ -2283,26 +2283,26 @@
             },
             {
               "value": "1.6",
-              "label": "Large"
+              "label": "Groot"
             },
             {
               "value": "1.8",
-              "label": "Extra large"
+              "label": "Extra groot"
             }
           ],
           "default": "1.4",
-          "label": "Price font size"
+          "label": "Prijs lettergrootte"
         },
         {
           "type": "checkbox",
           "id": "hide_compare_price",
-          "label": "Hide compare price",
+          "label": "Vergelijkingsprijs verbergen",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_variant_picker",
-          "label": "Show variant picker",
+          "label": "Toon variantkiezer",
           "default": true
         },
         {
@@ -2322,25 +2322,25 @@
         {
           "type": "checkbox",
           "id": "show_box_shadow",
-          "label": "Show drop shadow",
+          "label": "Toon slagschaduw",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "show_border",
-          "label": "Show border",
+          "label": "Toon rand",
           "default": true
         },
         {
           "type": "color",
           "id": "regular_border_color",
-          "label": "Locked border color",
+          "label": "Vergrendelde randkleur",
           "default": "#d7d7d7"
         },
         {
           "type": "color",
           "id": "selected_border_color",
-          "label": "Unlocked border color",
+          "label": "Ontgrendelde randkleur",
           "default": "#d7d7d7"
         },
         {
@@ -2349,37 +2349,37 @@
           "options": [
             {
               "value": "0.1",
-              "label": "Thin"
+              "label": "Dun"
             },
             {
               "value": "0.2",
-              "label": "Normal"
+              "label": "Normaal"
             }
           ],
           "default": "0.1",
-          "label": "Border thickness"
+          "label": "Randdikte"
         },
         {
           "type": "checkbox",
           "id": "show_custom_bg",
-          "label": "Show custom background",
+          "label": "Toon aangepaste achtergrond",
           "default": false
         },
         {
           "type": "color",
           "id": "regular_bg_color",
-          "label": "Locked ackground color",
+          "label": "Vergrendelde achtergrondkleur",
           "default": "#F2F2F2"
         },
         {
           "type": "color",
           "id": "selected_bg_color",
-          "label": "Unlocked background color",
+          "label": "Ontgrendelde achtergrondkleur",
           "default": "#F2F2F2"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -2388,7 +2388,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 15
         },
         {
@@ -2398,14 +2398,14 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Ondermarge",
           "default": 15
         }
       ]
     },
     {
       "type": "text_with_icon",
-      "name": "Text with icon",
+      "name": "Tekst met pictogram",
       "settings": [
         {
           "type": "select",
@@ -2413,19 +2413,19 @@
           "options": [
             {
               "value": "body",
-              "label": "Cart body"
+              "label": "Winkelwagen lichaam"
             },
             {
               "value": "footer",
-              "label": "Cart footer"
+              "label": "Winkelwagen voettekst"
             }
           ],
           "default": "body",
-          "label": "Position"
+          "label": "Positie"
         },
         {
           "type": "header",
-          "content": "Text"
+          "content": "Tekst"
         },
         {
           "type": "range",
@@ -2435,7 +2435,7 @@
           "step": 1,
           "unit": "px",
           "default": 14,
-          "label": "Mobile text size"
+          "label": "Mobiele tekstgrootte"
         },
         {
           "type": "range",
@@ -2445,24 +2445,24 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Desktop text size"
+          "label": "Desktop tekstgrootte"
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Text alignment",
+          "label": "Tekstuitlijning",
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "Links"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Midden"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "Rechts"
             }
           ],
           "default": "left"
@@ -2471,27 +2471,27 @@
           "type": "color",
           "id": "text_color",
           "default": "#121212",
-          "label": "Text color"
+          "label": "Tekstkleur"
         },
         {
           "type": "inline_richtext",
           "id": "text_1",
-          "default": "Text with icon",
-          "label": "Text #1"
+          "default": "Tekst met pictogram",
+          "label": "Tekst #1"
         },
         {
           "type": "inline_richtext",
           "id": "text_2",
-          "label": "Text #2"
+          "label": "Tekst #2"
         },
         {
           "type": "inline_richtext",
           "id": "text_3",
-          "label": "Text #3"
+          "label": "Tekst #3"
         },
         {
           "type": "header",
-          "content": "Icons"
+          "content": "Pictogrammen"
         },
         {
           "type": "range",
@@ -2501,8 +2501,8 @@
           "step": 5,
           "default": 120,
           "unit": "%",
-          "label": "Icon scale",
-          "info": "Relative to text size"
+          "label": "Pictogram schaal",
+          "info": "Relatief ten opzichte van tekstgrootte"
         },
         {
           "type": "color",
