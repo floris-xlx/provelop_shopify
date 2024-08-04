@@ -154,6 +154,10 @@
   }
 {%- endstyle -%}
 
+{%- if settings.cart_type == "drawer" -%}
+  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
 {% if settings.cart_type == 'notification' %}
   <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
   <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
