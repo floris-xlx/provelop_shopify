@@ -31,8 +31,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="collection-list-wrapper page-width isolate{% if show_mobile_slider %} page-width-desktop{% endif %}{% if section.settings.title == blank %} no-heading{% endif %}{% if section.settings.show_view_all == false or section.blocks.size > collections.size %} no-mobile-link{% endif %} section-{{ section.id }}-padding">
@@ -140,8 +140,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Toon sectie-ID",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -150,31 +150,31 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Toon op",
       "default": "always-display"
     },
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "Collections",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "default": "Collecties",
+      "label": "Kop",
+      "info": "Vet bepaalde woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kleur markering kop",
       "default": "#6D388B"
     },
     {
@@ -183,7 +183,7 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
@@ -191,11 +191,11 @@
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "select",
@@ -241,11 +241,11 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
@@ -253,12 +253,12 @@
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "To change the card color scheme, update your theme settings. Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurenschema",
+      "info": "Om het kleurenschema van de kaart te wijzigen, werk je je themainstellingen bij. Aangepast kleurenschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "checkbox",
@@ -294,7 +294,7 @@
     },
     {
       "type": "header",
-      "content": "t:sections.all.padding.section_padding_heading"
+      "content": "Sectie-instellingen voor padding"
     },
     {
       "type": "range",
@@ -303,7 +303,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_top",
+      "label": "Bovenste padding",
       "default": 36
     },
     {
@@ -313,31 +313,31 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "t:sections.all.padding.padding_bottom",
+      "label": "Onderste padding",
       "default": 36
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurenschema",
+      "info": "Toegepast als de instelling voor kleurenschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradient achtergrond",
+      "info": "Als toegevoegd, vervangt het de achtergrondkleur wanneer van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
@@ -353,13 +353,13 @@
         {
           "type": "image_picker",
           "id": "custom_image",
-          "label": "Custom cover image"
+          "label": "Aangepaste omslagafbeelding"
         },
         {
           "type": "text",
           "id": "custom_title",
-          "label": "Custom title",
-          "info": "If empty, the default collection title is displayed."
+          "label": "Aangepaste titel",
+          "info": "Als leeg, wordt de standaard collectie titel weergegeven."
         }
       ]
     }
