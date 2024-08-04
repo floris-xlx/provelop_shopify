@@ -16,12 +16,12 @@
     "logo_width": 200,
     "mobile_logo_width": 130,
     "colors_solid_button_labels": "#ffffff",
-    "colors_accent_1": "#6d388b",
+    "colors_accent_1": "#029fd8",
     "gradient_accent_1": "",
-    "colors_accent_2": "#6d388b",
+    "colors_accent_2": "#029fd8",
     "gradient_accent_2": "linear-gradient(54deg, rgba(109, 56, 139, 1) 14%, rgba(105, 14, 14, 1) 85%)",
     "colors_text": "#121212",
-    "colors_outline_button_labels": "#6d388b",
+    "colors_outline_button_labels": "#029fd8",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
     "colors_background_2": "#f3f3f3",
@@ -250,14 +250,6 @@
       "global-music-player": {
         "type": "global-music-player",
         "settings": {
-          "enabled": false,
-          "audio_src": "",
-          "volume": 10,
-          "position": "bottom-left",
-          "offset_x": 20,
-          "offset_y": 20,
-          "btn_animation": true,
-          "color_scheme": "accent-1"
         }
       },
       "cart-drawer": {

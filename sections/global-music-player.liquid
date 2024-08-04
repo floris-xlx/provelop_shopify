@@ -1,4 +1,4 @@
-{% style %}
+{% comment %} {% style %}
   .music-player-{{ section.id }} {
     --offset-x: {{ section.settings.offset_x | divided_by: 10.0 }}rem;
     --offset-y: {{ section.settings.offset_y | divided_by: 10.0 }}rem;
@@ -179,3 +179,4 @@
   ]
 }
 {% endschema %}
+ {% endcomment %}

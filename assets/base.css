@@ -193,7 +193,7 @@ details[open]:hover > .header__menu-item {
 .color-accent-2 .button--secondary,
 .color-background-2 .button--secondary,
 .color-inverse .button--secondary {
-  --color-button: var(--color-background);
+  --color-button: 2, 159, 216;
   --color-button-text: var(--color-foreground);
 }
 .button--tertiary {
@@ -205,7 +205,7 @@ details[open]:hover > .header__menu-item {
 .color-accent-2 .button--tertiary,
 .color-background-2 .button--tertiary,
 .color-inverse .button--tertiary {
-  --color-button: var(--color-foreground);
+  --color-button: 2, 159, 216;
   --color-button-text: var(--color-foreground);
 }
 .color-background-1,
@@ -218,7 +218,7 @@ details[open]:hover > .header__menu-item {
 }
 .color-accent-1,
 .color-accent-2 {
-  --color-card-hover: var(--color-base-solid-button-labels);
+  --color-card-hover: 2, 159, 216;
 }
 .color-icon-text,
 :root {
@@ -678,9 +678,9 @@ blockquote {
   line-height: calc(1 + 0.5 / var(--font-body-scale));
   letter-spacing: 0.04rem;
 }
-.color-foreground,
+.color-foreground
 .link--text {
-  color: rgb(var(--color-foreground));
+  color: rgb(2, 159, 216);
 }
 table:not([class]) {
   table-layout: fixed;

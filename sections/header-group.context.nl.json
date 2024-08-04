@@ -8,10 +8,21 @@
 * ------------------------------------------------------------
 */
 {
-  "parent": "footer-group.json",
+  "parent": "header-group.json",
   "context": {
-    "market": "international"
+    "market": "nl"
   },
   "sections": {
+    "fe1c8c67-b84c-4466-a515-70df3134c1c0": {
+      "settings": {
+      },
+      "blocks": {
+        "sections--21450414096679__fe1c8c67-b84c-4466-a515-70df3134c1c0-announcement-1": {
+          "settings": {
+            "text": "Welkom tot onze store"
+          }
+        }
+      }
+    }
   }
 }
