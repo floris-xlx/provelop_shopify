@@ -128,18 +128,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
@@ -149,7 +149,7 @@
     {
       "type": "range",
       "id": "speed",
-      "label": "Ticker speed",
+      "label": "Ticker snelheid",
       "min": 1,
       "max": 5,
       "default": 3,
@@ -158,13 +158,13 @@
     {
       "type": "number",
       "id": "mobile_spacing",
-      "label": "Mobile spacing (px)",
+      "label": "Mobiele afstand (px)",
       "default": 60
     },
     {
       "type": "number",
       "id": "desktop_spacing",
-      "label": "Desktop spacing (px)",
+      "label": "Desktop afstand (px)",
       "default": 100
     },
     {
@@ -181,11 +181,11 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
@@ -193,16 +193,16 @@
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt bewerkt onderaan de sectie-instellingen."
     },
     {
       "type": "header",
-      "content": "Text"
+      "content": "Tekst"
     },
     {
       "type": "range",
@@ -212,7 +212,7 @@
       "step": 1,
       "unit": "px",
       "default": 16,
-      "label": "Mobile text size"
+      "label": "Mobiele tekstgrootte"
     },
     {
       "type": "range",
@@ -222,29 +222,29 @@
       "step": 1,
       "unit": "px",
       "default": 18,
-      "label": "Desktop text size"
+      "label": "Desktop tekstgrootte"
     },
     {
       "type": "checkbox",
       "id": "italic_text",
-      "label": "Italic text",
+      "label": "Cursieve tekst",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "uppercase_text",
-      "label": "Uppercase text",
+      "label": "Hoofdlettertekst",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "bold_text",
-      "label": "Bold text",
+      "label": "Vette tekst",
       "default": false
     },
     {
       "type": "header",
-      "content": "Images"
+      "content": "Afbeeldingen"
     },
     {
       "type": "range",
@@ -254,7 +254,7 @@
       "step": 2,
       "unit": "px",
       "default": 26,
-      "label": "Mobile image height"
+      "label": "Mobiele afbeeldingshoogte"
     },
     {
       "type": "range",
@@ -264,37 +264,37 @@
       "step": 4,
       "unit": "px",
       "default": 40,
-      "label": "Desktop image height"
+      "label": "Desktop afbeeldingshoogte"
     },
     {
       "type": "header",
-      "content": "Visibility"
+      "content": "Zichtbaarheid"
     },
     {
       "type": "paragraph",
-      "content": "Use these options if you want to display different tickers in the Header group across different product pages."
+      "content": "Gebruik deze opties als u verschillende tickers in de Header-groep op verschillende productpagina's wilt weergeven."
     },
     {
       "type": "text",
       "id": "hidden_products",
-      "label": "Product pages to hide the block on",
-      "info": "Handles of products to hide the block on, split with a comma."
+      "label": "Productpagina's om het blok op te verbergen",
+      "info": "Handles van producten om het blok op te verbergen, gescheiden door een komma."
     },
     {
       "type": "checkbox",
       "id": "enable_specific_display",
-      "label": "Display the block on specific product pages only",
+      "label": "Toon het blok alleen op specifieke productpagina's",
       "default": false
     },
     {
       "type": "text",
       "id": "displayed_products",
-      "label": "Specific product pages to display the block on",
-      "info": "Applied if the checkbox above is checked. Handles of products to only display the block on, split with a comma."
+      "label": "Specifieke productpagina's om het blok op weer te geven",
+      "info": "Toegepast als het selectievakje hierboven is aangevinkt. Handles van producten om het blok alleen op weer te geven, gescheiden door een komma."
     },
     {
       "type": "header",
-      "content": "Mobile padding"
+      "content": "Mobiele opvulling"
     },
     {
       "type": "range",
@@ -318,7 +318,7 @@
     },
     {
       "type": "header",
-      "content": "Desktop padding"
+      "content": "Desktop opvulling"
     },
     {
       "type": "range",
@@ -342,49 +342,49 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
     {
       "type": "text",
-      "name": "Text",
+      "name": "Tekst",
       "settings": [
         {
           "type": "text",
           "id": "title",
           "default": "Dropship Academy Theme",
-          "label": "Text"
+          "label": "Tekst"
         }
       ]
     },
     {
       "type": "image",
-      "name": "Image",
+      "name": "Afbeelding",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Afbeelding"
         }
       ]
     }
