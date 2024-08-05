@@ -13,5 +13,12 @@
     "market": "nl"
   },
   "sections": {
+    "ee8d9ca6-4a41-401f-83a3-37e138a112b9": {
+      "settings": {
+        "title": "Contact formulier"
+      },
+      "blocks": {
+      }
+    }
   }
 }
