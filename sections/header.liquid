@@ -98,6 +98,119 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* Sidecart styles */
+  .sidecart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 400px;
+    height: 100%;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidecart.open {
+    right: 0;
+  }
+
+  .sidecart-header {
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sidecart-body {
+    flex: 1;
+    padding: 1rem;
+  }
+
+  .sidecart-footer {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+  }
+
+  .sidecart-close {
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+  }
+
+  .cart-item-details {
+    flex: 1;
+    margin-left: 1rem;
+  }
+
+  .cart-item-title {
+    font-weight: bold;
+  }
+
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+  }
+
+  .cart-item-quantity button {
+    background: none;
+    border: 1px solid #ddd;
+    padding: 0.2rem 0.5rem;
+    cursor: pointer;
+  }
+
+  .cart-item-quantity input {
+    width: 2rem;
+    text-align: center;
+    border: 1px solid #ddd;
+    margin: 0 0.5rem;
+  }
+
+  .cart-item-price {
+    font-weight: bold;
+    color: #e60000;
+  }
+
+  .cart-item-remove {
+    cursor: pointer;
+    color: #e60000;
+  }
+
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+  }
+
+  .cart-checkout-button {
+    width: 100%;
+    padding: 1rem;
+    background-color: #800080;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+  }
 </style>
 
 {%- style -%}
@@ -565,7 +678,7 @@
         </a>
       {%- endif -%}
 
-      <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
+      <a href="javascript:void(0);" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
         {%- liquid
           assign non_upsell_count = cart.item_count
           for item in cart.items
@@ -597,6 +710,62 @@
 {%- if settings.cart_type == "notification" -%}
   {%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
 {%- endif -%}
+
+<!-- HTML for the sidecart -->
+<div class="sidecart" id="sidecart">
+  <div class="sidecart-header">
+    <h2>Cart • <span id="cart-item-count">{{ cart.item_count }}</span> items</h2>
+    <span class="sidecart-close" id="sidecart-close">&times;</span>
+  </div>
+  <div class="sidecart-body">
+    <p>Cart reserved for 04:40 more minutes</p>
+    <p>You're $5.01 away from FREE shipping!</p>
+    {% for item in cart.items %}
+      <div class="cart-item">
+        <img src="{{ item.image | img_url: 'small' }}" alt="{{ item.title }}">
+        <div class="cart-item-details">
+          <p class="cart-item-title">{{ item.title }}</p>
+          <p class="cart-item-quantity">
+            <button>-</button>
+            <input type="text" value="{{ item.quantity }}" readonly>
+            <button>+</button>
+          </p>
+          <p class="cart-item-price">{{ item.line_price | money }}</p>
+        </div>
+        <span class="cart-item-remove">&times;</span>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="sidecart-footer">
+    <div class="cart-summary">
+      <p>Subtotal</p>
+      <p>{{ cart.total_price | money }}</p>
+    </div>
+    <button class="cart-checkout-button">Check out • {{ cart.total_price | money }}</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sidecart = document.getElementById('sidecart');
+    var cartIcon = document.getElementById('cart-icon-bubble');
+    var sidecartClose = document.getElementById('sidecart-close');
+
+    cartIcon.addEventListener('click', function() {
+      sidecart.classList.add('open');
+    });
+
+    sidecartClose.addEventListener('click', function() {
+      sidecart.classList.remove('open');
+    });
+
+    document.addEventListener('click', function(event) {
+      if (!sidecart.contains(event.target) && !cartIcon.contains(event.target)) {
+        sidecart.classList.remove('open');
+      }
+    });
+  });
+</script>
 
 {% javascript %}
   class StickyHeader extends HTMLElement {
@@ -631,7 +800,7 @@
     }
 
     setHeaderHeight() {
-      document.documentElement.style.setProperty('--header-height', ${this.header.offsetHeight}px);
+      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
     }
 
     disconnectedCallback() {
@@ -722,7 +891,7 @@
     }
 
     setHeaderHeight() {
-      document.documentElement.style.setProperty('--header-height', ${this.header.offsetHeight}px);
+      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
     }
   }
 
