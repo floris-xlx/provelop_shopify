@@ -32,8 +32,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class="section-id-btn button" data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="page-width section-{{ section.id }}-padding">
@@ -407,13 +407,13 @@
 
 {% schema %}
 {
-  "name": "Custom columns",
+  "name": "Aangepaste kolommen",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Toon sectie-ID",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties te combineren. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -2673,27 +2673,27 @@
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "Tweede kolom"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "Derde kolom"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "Vierde kolom"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "Vijfde kolom"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "Zesde kolom"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "Weergeven in"
         },
         {
           "type": "select",
@@ -2701,43 +2701,43 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "Alleen mobiel"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "Alleen desktop"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "Alle apparaten"
             }
           ],
-          "label": "Display on",
+          "label": "Weergeven op",
           "default": "always-display"
         },
         {
           "type": "text",
           "id": "heading",
-          "default": "Collapsible row",
+          "default": "Inklapbare rij",
           "info": "t:sections.main-product.blocks.collapsible_tab.settings.heading.info",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.heading.label"
         },
         {
           "type": "select",
           "id": "heading_size",
-          "label": "Heading size",
+          "label": "Kopgrootte",
           "options": [
             {
               "value": "small",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "medium",
-              "label": "Medium"
+              "label": "Gemiddeld"
             },
             {
               "value": "large",
-              "label": "Large"
+              "label": "Groot"
             }
           ],
           "default": "medium"
@@ -2746,28 +2746,28 @@
           "type": "text",
           "id": "icon",
           "default": "check_box",
-          "label": "Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "Vervuld pictogram"
         },
         {
           "type": "image_picker",
           "id": "custom_icon",
-          "label": "Custom icon"
+          "label": "Aangepast pictogram"
         },
         {
           "type": "select",
           "id": "collapse_icon",
-          "label": "Collapse icon",
+          "label": "Inklappictogram",
           "options": [
             {
               "value": "carret",
-              "label": "Carret"
+              "label": "Pijl"
             },
             {
               "value": "plus",
@@ -2779,9 +2779,9 @@
         {
           "type": "checkbox",
           "id": "display_top_border",
-          "label": "Display top border",
+          "label": "Bovenrand weergeven",
           "default": true,
-          "info": "This option is automatically optimized for stacked rows."
+          "info": "Deze optie is automatisch geoptimaliseerd voor gestapelde rijen."
         },
         {
           "type": "richtext",
@@ -2795,7 +2795,7 @@
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blok marge"
         },
         {
           "type": "range",
@@ -2804,7 +2804,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 20
         },
         {
@@ -2814,14 +2814,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onder marge",
           "default": 0
         }
       ]
     },
     {
       "type": "payment_badges",
-      "name": "Payment Option Badges",
+      "name": "Betalingsoptie Badges",
       "limit": 1,
       "settings": [
         {
@@ -2830,31 +2830,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "Eerste kolom"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "Tweede kolom"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "Derde kolom"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "Vierde kolom"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "Vijfde kolom"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "Zesde kolom"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "Weergeven in"
         },
         {
           "type": "select",
@@ -2862,25 +2862,25 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "Alleen mobiel"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "Alleen desktop"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "Alle apparaten"
             }
           ],
-          "label": "Display on",
+          "label": "Weergeven op",
           "default": "always-display"
         },
         {
           "type": "text",
           "id": "enabled_payment_types",
-          "label": "Custom payment icons to show",
-          "info": "List of payments you want to show, split with a comma. Options are: afterpay, american_express, apple_pay, bitcoin, dankort, diners_club, discover, dogecoin, dwolla, facebook_pay, forbrugsforeningen, google_pay, ideal, jcb, klarna, klarna-pay-later, litecoin, maestro, master, paypal, shopify_pay, sofort, unionpay, visa"
+          "label": "Aangepaste betalingsiconen om weer te geven",
+          "info": "Lijst van betalingen die je wilt weergeven, gescheiden door een komma. Opties zijn: afterpay, american_express, apple_pay, bitcoin, dankort, diners_club, discover, dogecoin, dwolla, facebook_pay, forbrugsforeningen, google_pay, ideal, jcb, klarna, klarna-pay-later, litecoin, maestro, master, paypal, shopify_pay, sofort, unionpay, visa"
         },
         {
           "type": "select",
@@ -2888,19 +2888,19 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "Links"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Centrum"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "Rechts"
             }
           ],
           "default": "flex-start",
-          "label": "Desktop alignment"
+          "label": "Desktop uitlijning"
         },
         {
           "type": "select",
@@ -2908,23 +2908,23 @@
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "Links"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Centrum"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "Rechts"
             }
           ],
           "default": "center",
-          "label": "Mobile alignment"
+          "label": "Mobiele uitlijning"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blok marge"
         },
         {
           "type": "range",
@@ -2933,7 +2933,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 20
         },
         {
@@ -2943,14 +2943,14 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onder marge",
           "default": 20
         }
       ]
     },
     {
       "type": "email_signup",
-      "name": "Email signup",
+      "name": "E-mail aanmelding",
       "settings": [
         {
           "type": "select",
@@ -2958,31 +2958,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "Eerste kolom"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "Tweede kolom"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "Derde kolom"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "Vierde kolom"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "Vijfde kolom"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "Zesde kolom"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "Weergeven in"
         },
         {
           "type": "select",
@@ -2990,18 +2990,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "Alleen mobiel"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "Alleen desktop"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "Alle apparaten"
             }
           ],
-          "label": "Display on",
+          "label": "Weergeven op",
           "default": "always-display"
         },
         {
@@ -3011,14 +3011,14 @@
         {
           "type": "text",
           "id": "heading",
-          "default": "Subscribe to our emails",
+          "default": "Abonneer je op onze e-mails",
           "label": "t:sections.footer.blocks.link_list.settings.heading.label"
         },
         {
           "type": "richtext",
           "id": "subtext",
-          "default": "<p>A short sentence encouraging customers to subscribe to your newsletter.</p>",
-          "label": "Text"
+          "default": "<p>Een korte zin die klanten aanmoedigt zich in te schrijven voor je nieuwsbrief.</p>",
+          "label": "Tekst"
         },
         {
           "type": "select",
@@ -3026,21 +3026,21 @@
           "options": [
             {
               "value": "arrow",
-              "label": "Arrow button"
+              "label": "Pijlknop"
             },
             {
               "value": "solid",
-              "label": "Solid button"
+              "label": "Vaste knop"
             }
           ],
           "default": "solid",
-          "label": "Submit button type"
+          "label": "Indienen knop type"
         },
         {
           "type": "text",
           "id": "button_label",
-          "label": "Solid button label",
-          "default": "Sign up"
+          "label": "Vaste knop label",
+          "default": "Aanmelden"
         },
         {
           "type": "checkbox",
@@ -3050,7 +3050,7 @@
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blok marge"
         },
         {
           "type": "range",
@@ -3059,7 +3059,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 20
         },
         {
@@ -3069,7 +3069,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onder marge",
           "default": 20
         }
       ]
@@ -3084,31 +3084,31 @@
           "options": [
             {
               "value": "col_1",
-              "label": "First column"
+              "label": "Eerste kolom"
             },
             {
               "value": "col_2",
-              "label": "Second column"
+              "label": "Tweede kolom"
             },
             {
               "value": "col_3",
-              "label": "Third column"
+              "label": "Derde kolom"
             },
             {
               "value": "col_4",
-              "label": "Fourth column"
+              "label": "Vierde kolom"
             },
             {
               "value": "col_5",
-              "label": "Fifth column"
+              "label": "Vijfde kolom"
             },
             {
               "value": "col_6",
-              "label": "Sixth column"
+              "label": "Zesde kolom"
             }
           ],
           "default": "col_1",
-          "label": "Display in"
+          "label": "Weergeven in"
         },
         {
           "type": "select",
@@ -3116,18 +3116,18 @@
           "options": [
             {
               "value": "desktop-hidden",
-              "label": "Mobile only"
+              "label": "Alleen mobiel"
             },
             {
               "value": "mobile-hidden",
-              "label": "Desktop only"
+              "label": "Alleen desktop"
             },
             {
               "value": "always-display",
-              "label": "All devices"
+              "label": "Alle apparaten"
             }
           ],
-          "label": "Display on",
+          "label": "Weergeven op",
           "default": "always-display"
         },
         {
@@ -3143,7 +3143,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 20
         },
         {
@@ -3153,7 +3153,7 @@
           "max": 40,
           "step": 2,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onder marge",
           "default": 20
         }
       ]
@@ -3161,7 +3161,7 @@
   ],
   "presets": [
     {
-      "name": "Custom columns",
+      "name": "Aangepaste kolommen",
       "blocks": [
         {
           "type": "heading",
