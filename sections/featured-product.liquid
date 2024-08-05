@@ -1367,24 +1367,24 @@
           "step": 1,
           "unit": "px",
           "default": 16,
-          "label": "Text size"
+          "label": "Tekstgrootte"
         },
         {
           "type": "select",
           "id": "alignment",
-          "label": "Alignment",
+          "label": "Uitlijning",
           "options": [
             {
               "value": "flex-start",
-              "label": "Left"
+              "label": "Links"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Midden"
             },
             {
               "value": "flex-end",
-              "label": "Right"
+              "label": "Rechts"
             }
           ],
           "default": "flex-start"
@@ -1392,11 +1392,11 @@
         {
           "type": "text",
           "id": "scroll_id",
-          "label": "ID of the section to scroll to"
+          "label": "ID van de sectie om naar te scrollen"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -1405,7 +1405,7 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 15
         },
         {
@@ -1415,7 +1415,7 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Ondermarge",
           "default": 15
         }
       ]
@@ -1428,15 +1428,15 @@
         {
           "type": "select",
           "id": "layout",
-          "label": "Layout",
+          "label": "Indeling",
           "options": [
             {
               "value": "price_first",
-              "label": "Price first"
+              "label": "Prijs eerst"
             },
             {
               "value": "price_second",
-              "label": "Compare price first"
+              "label": "Vergelijk prijs eerst"
             }
           ],
           "default": "price_first"
@@ -1444,7 +1444,7 @@
         {
           "type": "select",
           "id": "price_color",
-          "label": "Price color",
+          "label": "Prijs kleur",
           "options": [
             {
               "value": "accent-1",
@@ -1456,11 +1456,11 @@
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "Omlijning knop"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "Tekst"
             }
           ],
           "default": "accent-1"
@@ -1468,7 +1468,7 @@
         {
           "type": "select",
           "id": "compare_price_color",
-          "label": "Compare price color",
+          "label": "Vergelijk prijs kleur",
           "options": [
             {
               "value": "accent-1",
@@ -1480,11 +1480,11 @@
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "Omlijning knop"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "Tekst"
             }
           ],
           "default": "text"
@@ -1493,11 +1493,11 @@
           "type": "checkbox",
           "id": "hide_sale_badge",
           "default": false,
-          "label": "Hide sale badge"
+          "label": "Verberg verkoopbadge"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -1506,7 +1506,7 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 15
         },
         {
@@ -1516,7 +1516,7 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Ondermarge",
           "default": 15
         }
       ]
@@ -1548,7 +1548,7 @@
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -1557,7 +1557,7 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 15
         },
         {
@@ -1567,53 +1567,53 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Ondermarge",
           "default": 15
         }
       ]
     },
     {
       "type": "quantity_selector",
-      "name": "Quantity selector",
+      "name": "Aantal selector",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "Classic quantity selector"
+          "content": "Klassieke aantal selector"
         },
         {
           "type": "checkbox",
           "id": "full_width_classic",
-          "label": "Full width"
+          "label": "Volledige breedte"
         },
         {
           "type": "paragraph",
-          "content": "To further customize the appearance of the classic quantity selector (not quantity breaks), navigate to Theme settings > Quantity selector."
+          "content": "Om het uiterlijk van de klassieke aantal selector verder aan te passen (niet aantal breuken), navigeer naar Thema-instellingen > Aantal selector."
         },
         {
           "type": "header",
-          "content": "Quantity Discounts"
+          "content": "Aantal kortingen"
         },
         {
           "type": "paragraph",
-          "content": "Make sure to set up an [automatic discount](https://help.shopify.com/en/manual/discounts/automatic-discounts) to allow items to be discounted at certain quantity levels."
+          "content": "Zorg ervoor dat je een [automatische korting](https://help.shopify.com/en/manual/discounts/automatic-discounts) instelt om items te laten korten op bepaalde hoeveelheidsniveaus."
         },
         {
           "type": "checkbox",
           "id": "enable_quantity_discounts",
-          "label": "Enable Quantity Discounts"
+          "label": "Aantal kortingen inschakelen"
         },
         {
           "type": "paragraph",
-          "content": "[Tutorial on how to set up](https:\/\/dropshipacademy.nl\/product-page\/quantity-breaks)"
+          "content": "[Handleiding over hoe in te stellen](https:\/\/dropshipacademy.nl\/product-page\/quantity-breaks)"
         },
         {
           "type": "paragraph",
-          "content": "DYNAMIC VALUES: Use these auto-calculated values based on variant/quantity: [quantity] - bundle quantity, [price] - bundle total, [compare_price] - bundle compare total (adjustable calculation for each option), [price_each] - item average price, [compare_price_each] - item average compare price, [amount_saved] - difference between total & compare price, [amount_saved_rounded] - rounded up difference (e.g., 19.95 > 20)."
+          "content": "DYNAMISCHE WAARDEN: Gebruik deze automatisch berekende waarden op basis van variant/hoeveelheid: [quantity] - bundel hoeveelheid, [price] - bundel totaal, [compare_price] - bundel vergelijk totaal (aanpasbare berekening voor elke optie), [price_each] - gemiddelde prijs per item, [compare_price_each] - gemiddelde vergelijk prijs per item, [amount_saved] - verschil tussen totaal & vergelijk prijs, [amount_saved_rounded] - afgerond verschil (bijv. 19.95 > 20)."
         },
         {
           "type": "paragraph",
-          "content": "NOTE: Dynamic values are available in ALL text boxes"
+          "content": "OPMERKING: Dynamische waarden zijn beschikbaar in ALLE tekstvakken"
         },
         {
           "type": "select",
@@ -1621,7 +1621,7 @@
           "options": [
             {
               "value": "normal",
-              "label": "Normal"
+              "label": "Normaal"
             },
             {
               "value": "compact",
@@ -1629,17 +1629,17 @@
             },
             {
               "value": "vertical",
-              "label": "Vertical"
+              "label": "Verticaal"
             }
           ],
-          "label": "Style",
+          "label": "Stijl",
           "default": "normal"
         },
         {
           "type": "text",
           "id": "headline",
-          "label": "Heading",
-          "default": "BUNDLE & SAVE"
+          "label": "Kop",
+          "default": "BUNDEL & BESPAAR"
         },
         {
           "type": "select",
@@ -1647,59 +1647,59 @@
           "options": [
             {
               "value": "none",
-              "label": "None"
+              "label": "Geen"
             },
             {
               "value": "option_1",
-              "label": "Option #1"
+              "label": "Optie #1"
             },
             {
               "value": "option_2",
-              "label": "Option #2"
+              "label": "Optie #2"
             },
             {
               "value": "option_3",
-              "label": "Option #3"
+              "label": "Optie #3"
             },
             {
               "value": "option_4",
-              "label": "Option #4"
+              "label": "Optie #4"
             }
           ],
           "default": "option_1",
-          "label": "Preselected option"
+          "label": "Vooraf geselecteerde optie"
         },
         {
           "type": "checkbox",
           "id": "update_prices",
-          "label": "Enable variant price updates",
+          "label": "Variant prijs updates inschakelen",
           "default": false,
-          "info": "This option will dynamically change the displayed bundle prices based on the selected variant. ATTENTION: This option might NOT work with currency converters."
+          "info": "Deze optie zal de weergegeven bundelprijzen dynamisch wijzigen op basis van de geselecteerde variant. LET OP: Deze optie werkt mogelijk NIET met valuta-omzetters."
         },
         {
           "type": "checkbox",
           "id": "enable_variant_selectors",
-          "label": "Enable variant selectors",
+          "label": "Variant selectors inschakelen",
           "default": true,
-          "info": "If the product has multiple variants, a variant picker will be displayed for each quantity"
+          "info": "Als het product meerdere varianten heeft, wordt er voor elke hoeveelheid een variant picker weergegeven"
         },
         {
           "type": "checkbox",
           "id": "enable_variant_selectors_on_quantity_of_1",
-          "label": "Enable variant selectors on single quantity",
+          "label": "Variant selectors inschakelen bij een hoeveelheid van 1",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "hide_pickers_overlay",
-          "label": "Disable variant pickers color overlay",
+          "label": "Variant pickers kleur overlay uitschakelen",
           "default": true
         },
         {
           "type": "inline_richtext",
           "id": "pickers_label",
           "label": "Variant pickers label",
-          "info": "Displayed above the variant pickers."
+          "info": "Weergegeven boven de variant pickers."
         },
         {
           "type": "range",
@@ -1708,20 +1708,20 @@
           "max": 100,
           "step": 5,
           "unit": "%",
-          "label": "Images width",
+          "label": "Afbeeldingen breedte",
           "default": 70,
-          "info": "Width of images (relative to the container) that can be added when Style is set to Vertical"
+          "info": "Breedte van afbeeldingen (relatief aan de container) die kunnen worden toegevoegd wanneer de stijl is ingesteld op Verticaal"
         },
         {
           "type": "checkbox",
           "id": "space_images",
-          "label": "Space images from top",
+          "label": "Afbeeldingen van bovenaf scheiden",
           "default": true
         },
         {
           "type": "select",
           "id": "color_scheme",
-          "label": "Color scheme",
+          "label": "Kleurschema",
           "options": [
             {
               "value": "accent-1",
@@ -1733,18 +1733,18 @@
             },
             {
               "value": "outline-button",
-              "label": "Outline button"
+              "label": "Omlijning knop"
             },
             {
               "value": "text",
-              "label": "Text"
+              "label": "Tekst"
             }
           ],
           "default": "accent-1"
         },
         {
           "type": "header",
-          "content": "Quantity option #1"
+          "content": "Aantal optie #1"
         },
         {
           "type": "range",
@@ -1753,57 +1753,57 @@
           "max": 20,
           "step": 1,
           "unit": "qty",
-          "label": "Option #1 Quantity",
+          "label": "Optie #1 Aantal",
           "default": 1,
-          "info": "Set to 0 to disable this option"
+          "info": "Stel in op 0 om deze optie uit te schakelen"
         },
         {
           "type": "text",
           "id": "option_1_badge",
-          "label": "Option #1 Badge text"
+          "label": "Optie #1 Badge tekst"
         },
         {
           "type": "image_picker",
           "id": "option_1_image",
-          "label": "Option #1 Image",
-          "info": "Displayed if Style is set to Vertical. Image with transparent background is recommended"
+          "label": "Optie #1 Afbeelding",
+          "info": "Wordt weergegeven als de stijl is ingesteld op Verticaal. Afbeelding met transparante achtergrond wordt aanbevolen"
         },
         {
           "type": "text",
           "id": "option_1_label",
-          "label": "Option #1 Label",
-          "default": "Buy [quantity]"
+          "label": "Optie #1 Label",
+          "default": "Koop [quantity]"
         },
         {
           "type": "text",
           "id": "option_1_benefit",
-          "label": "Option #1 Benefit",
-          "info": "Display an additional benefit of the bundle"
+          "label": "Optie #1 Voordeel",
+          "info": "Toon een extra voordeel van het pakket"
         },
         {
           "type": "text",
           "id": "option_1_caption",
-          "label": "Option #1 Caption",
-          "default": "You save [amount_saved]"
+          "label": "Optie #1 Onderschrift",
+          "default": "Je bespaart [amount_saved]"
         },
         {
           "type": "text",
           "id": "option_1_percentage_off_text",
           "default": "0",
-          "label": "Option #1 Percentage off",
-          "info": "A percentage that will be discounted from the quantity's total price"
+          "label": "Optie #1 Percentage korting",
+          "info": "Een percentage dat wordt afgetrokken van de totale prijs van de hoeveelheid"
         },
         {
           "type": "text",
           "id": "option_1_fixed_amount_off",
-          "label": "Option #1 Fixed amount off",
+          "label": "Optie #1 Vaste korting",
           "default": "0",
-          "info": "A fixed amount of money (WITHOUT the currency symbol/code) that will be subtracted from the quantity's total price"
+          "info": "Een vast bedrag (ZONDER het valutasymbool/code) dat wordt afgetrokken van de totale prijs van de hoeveelheid"
         },
         {
           "type": "text",
           "id": "option_1_price_text",
-          "label": "Option #1 Price text",
+          "label": "Optie #1 Prijs tekst",
           "default": "[price]"
         },
         {
@@ -1812,26 +1812,26 @@
           "options": [
             {
               "value": "price",
-              "label": "Regular price"
+              "label": "Reguliere prijs"
             },
             {
               "value": "compare_price",
-              "label": "Compare price"
+              "label": "Vergelijk prijs"
             }
           ],
           "default": "compare_price",
-          "label": "Option #1 Compare price based on",
-          "info": "Choose if you want bundle compare price to be calculated based on product price or compare price (selected value multiplied by quantity)"
+          "label": "Optie #1 Vergelijk prijs gebaseerd op",
+          "info": "Kies of je wilt dat de vergelijk prijs van de bundel wordt berekend op basis van de productprijs of vergelijk prijs (geselecteerde waarde vermenigvuldigd met hoeveelheid)"
         },
         {
           "type": "text",
           "id": "option_1_compare_price_text",
-          "label": "Option #1 Compare price text",
+          "label": "Optie #1 Vergelijk prijs tekst",
           "default": "[compare_price]"
         },
         {
           "type": "header",
-          "content": "Quantity option #2"
+          "content": "Aantal optie #2"
         },
         {
           "type": "range",
@@ -1840,57 +1840,57 @@
           "max": 20,
           "step": 1,
           "unit": "qty",
-          "label": "Option #2 Quantity",
+          "label": "Optie #2 Aantal",
           "default": 2,
-          "info": "Set to 0 to disable this option"
+          "info": "Stel in op 0 om deze optie uit te schakelen"
         },
         {
           "type": "text",
           "id": "option_2_badge",
-          "label": "Option #2 Badge text"
+          "label": "Optie #2 Badge tekst"
         },
         {
           "type": "image_picker",
           "id": "option_2_image",
-          "label": "Option #2 Image",
-          "info": "Displayed if Style is set to Vertical. Image with transparent background is recommended"
+          "label": "Optie #2 Afbeelding",
+          "info": "Wordt weergegeven als de stijl is ingesteld op Verticaal. Afbeelding met transparante achtergrond wordt aanbevolen"
         },
         {
           "type": "text",
           "id": "option_2_label",
-          "label": "Option #2 Label",
-          "default": "Buy [quantity]"
+          "label": "Optie #2 Label",
+          "default": "Koop [quantity]"
         },
         {
           "type": "text",
           "id": "option_2_benefit",
-          "label": "Option #2 Benefit",
-          "info": "Display an additional benefit of the bundle"
+          "label": "Optie #2 Voordeel",
+          "info": "Toon een extra voordeel van het pakket"
         },
         {
           "type": "text",
           "id": "option_2_caption",
-          "label": "Option #2 Caption",
-          "default": "You save [amount_saved]"
+          "label": "Optie #2 Onderschrift",
+          "default": "Je bespaart [amount_saved]"
         },
         {
           "type": "text",
           "id": "option_2_percentage_off_text",
           "default": "0",
-          "label": "Option #2 Percentage off",
-          "info": "A percentage that will be discounted from the quantity's total price"
+          "label": "Optie #2 Percentage korting",
+          "info": "Een percentage dat wordt afgetrokken van de totale prijs van de hoeveelheid"
         },
         {
           "type": "text",
           "id": "option_2_fixed_amount_off",
-          "label": "Option #2 Fixed amount off",
+          "label": "Optie #2 Vaste korting",
           "default": "0",
-          "info": "A fixed amount of money (WITHOUT the currency symbol/code) that will be subtracted from the quantity's total price"
+          "info": "Een vast bedrag (ZONDER het valutasymbool/code) dat wordt afgetrokken van de totale prijs van de hoeveelheid"
         },
         {
           "type": "text",
           "id": "option_2_price_text",
-          "label": "Option #2 Price text",
+          "label": "Optie #2 Prijs tekst",
           "default": "[price]"
         },
         {
@@ -1899,21 +1899,21 @@
           "options": [
             {
               "value": "price",
-              "label": "Regular price"
+              "label": "Reguliere prijs"
             },
             {
               "value": "compare_price",
-              "label": "Compare price"
+              "label": "Vergelijk prijs"
             }
           ],
           "default": "compare_price",
-          "label": "Option #2 Compare price based on",
-          "info": "Choose if you want bundle compare price to be calculated based on product price or compare price (selected value multiplied by quantity)"
+          "label": "Optie #2 Vergelijk prijs gebaseerd op",
+          "info": "Kies of je wilt dat de vergelijk prijs van de bundel wordt berekend op basis van de productprijs of vergelijk prijs (geselecteerde waarde vermenigvuldigd met hoeveelheid)"
         },
         {
           "type": "text",
           "id": "option_2_compare_price_text",
-          "label": "Option #2 Compare price text",
+          "label": "Optie #2 Vergelijk prijs tekst",
           "default": "[compare_price]"
         },
         {
