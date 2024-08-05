@@ -1,7 +1,44 @@
+<link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- if settings.predictive_search_enabled -%}
+  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+{%- if section.settings.menu_type_desktop == 'mega' -%}
+  <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+
+{%- if settings.cart_type == "drawer" -%}
+  {{ 'component-cart-drawer.css' | asset_url | stylesheet_tag }}
+  {{ 'component-cart.css' | asset_url | stylesheet_tag }}
+  {{ 'component-totals.css' | asset_url | stylesheet_tag }}
+  {{ 'component-price.css' | asset_url | stylesheet_tag }}
+  {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
 <style>
   header-drawer {
     justify-self: start;
     margin-left: -1.2rem;
+  }
+
+  {%- if section.settings.sticky_header_type == 'reduce-logo-size' -%}
+    .scrolled-past-header .header__heading-logo-wrapper {
+      width: 75%;
+    }
+  {%- endif -%}
+
+  {%- if section.settings.menu_type_desktop != "drawer" -%}
+    @media screen and (min-width: 990px) {
+      header-drawer {
+        display: none;
+      }
+    }
+  {%- endif -%}
+
+  .menu-drawer-container {
+    display: flex;
   }
 
   .header__heading-link.media {
@@ -116,6 +153,10 @@
     }
   }
 {%- endstyle -%}
+
+{%- if settings.cart_type == "drawer" -%}
+  <script src="{{ 'cart-drawer.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 {% if settings.cart_type == 'notification' %}
   <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -619,7 +660,7 @@
     }
 
     setHeaderHeight() {
-      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+      document.documentElement.style.setProperty('--header-height', ${this.header.offsetHeight}px);
     }
 
     disconnectedCallback() {
@@ -710,7 +751,7 @@
     }
 
     setHeaderHeight() {
-      document.documentElement.style.setProperty('--header-height', `${this.header.offsetHeight}px`);
+      document.documentElement.style.setProperty('--header-height', ${this.header.offsetHeight}px);
     }
   }
 
@@ -764,7 +805,7 @@
   "settings": [
     {
       "type": "header",
-      "content": "Koptekst"
+      "content": "Header"
     },
     {
       "type": "select",
@@ -810,19 +851,19 @@
         },
         {
           "value": "background-1",
-          "label": "Achtergrond 1"
+          "label": "Background 1"
         },
         {
           "value": "background-2",
-          "label": "Achtergrond 2"
+          "label": "Background 2"
         },
         {
           "value": "inverse",
-          "label": "Omgekeerd"
+          "label": "Inverse"
         }
       ],
       "default": "background-1",
-      "label": "Kleurschema"
+      "label": "Color scheme"
     },
     {
       "type": "header",
@@ -878,7 +919,7 @@
       "options": [
         {
           "value": "dropdown",
-          "label": "Uitklapmenu"
+          "label": "Dropdown"
         },
         {
           "value": "mega",
@@ -886,17 +927,17 @@
         },
         {
           "value": "drawer",
-          "label": "Lade"
+          "label": "Drawer"
         }
       ],
       "default": "dropdown",
-      "label": "Type desktopmenu",
-      "info": "Menutype is automatisch geoptimaliseerd voor mobiel."
+      "label": "Desktop menu type",
+      "info": "Menu type is automatically optimized for mobile."
     },
     {
       "type": "checkbox",
       "id": "highlight_active_link",
-      "label": "Markeer actieve link op desktop",
+      "label": "Highlight active link on desktop",
       "default": true
     },
     {
@@ -913,63 +954,63 @@
         },
         {
           "value": "background-1",
-          "label": "Achtergrond 1"
+          "label": "Background 1"
         },
         {
           "value": "background-2",
-          "label": "Achtergrond 2"
+          "label": "Background 2"
         },
         {
           "value": "inverse",
-          "label": "Omgekeerd"
+          "label": "Inverse"
         }
       ],
       "default": "accent-1",
-      "label": "Kleurschema gemarkeerde link"
+      "label": "Highlighted link color scheme"
     },
     {
       "type": "header",
-      "content": "Producten & Collecties Mega Menu"
+      "content": "Products & Collections Mega Menu"
     },
     {
       "type": "text",
       "id": "products_mega_menu_links",
-      "label": "Links om producten & collecties mega menu weer te geven",
-      "info": "Labels van links gescheiden door komma."
+      "label": "Links to display products & collections mega menu",
+      "info": "Labels of links separated by comma."
     },
     {
       "type": "checkbox",
       "id": "products_mega_menu_display_collection_products",
-      "label": "Toon producten die de collectie bevat",
+      "label": "Display products that the collection contains",
       "default": false,
-      "info": "Als aangevinkt, wordt elk product uit de sublinkcollectie weergegeven. Voeg anders elk individueel product/collectie toe als een geneste link."
+      "info": "If checked, every product from the sub-link collection will be displayed. Otherwise, add each individual product/collection as a nested link."
     },
     {
       "type": "checkbox",
       "id": "products_mega_menu_display_collection_images",
-      "label": "Toon collectieafbeeldingen op desktop",
+      "label": "Display collection images on desktop",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "products_mega_menu_display_collection_images_on_mobile",
-      "label": "Toon collectieafbeeldingen op mobiel",
+      "label": "Display collection images on mobile",
       "default": false
     },
     {
       "type": "header",
-      "content": "Mobiel menu"
+      "content": "Mobile menu"
     },
     {
       "type": "text",
       "id": "mobile_menu_title",
-      "label": "Titel",
+      "label": "Title",
       "default": "Menu"
     },
     {
       "type": "link_list",
       "id": "secondary_menu",
-      "label": "Secundair menu"
+      "label": "Secondary menu"
     },
     {
       "type": "select",
@@ -985,19 +1026,19 @@
         },
         {
           "value": "background-1",
-          "label": "Achtergrond 1"
+          "label": "Background 1"
         },
         {
           "value": "background-2",
-          "label": "Achtergrond 2"
+          "label": "Background 2"
         },
         {
           "value": "inverse",
-          "label": "Omgekeerd"
+          "label": "Inverse"
         }
       ],
       "default": "background-1",
-      "label": "Kleurschema"
+      "label": "Color scheme"
     },
     {
       "type": "header",
@@ -1021,16 +1062,16 @@
     },
     {
       "type": "header",
-      "content": "Zoeken"
+      "content": "Search"
     },
     {
       "type": "paragraph",
-      "content": "Voeg een \"search-hidden\" tag toe aan de producten die u wilt verbergen voor de zoekresultaten."
+      "content": "Add a \"search-hidden\" tag to the products you want to hide from the search results."
     },
     {
       "type": "checkbox",
       "id": "display_search",
-      "label": "Toon zoekpictogram",
+      "label": "Display search icon",
       "default": true
     },
     {
