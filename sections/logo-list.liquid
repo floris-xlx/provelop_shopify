@@ -31,8 +31,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="logo-list-{{ section.id }} page-width section-{{ section.id }}-padding">
@@ -101,8 +101,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroepsectie om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -111,31 +111,31 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "default": "Featured on",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Kop",
+      "info": "Vetgedrukte woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kop markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -144,24 +144,24 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "checkbox",
       "id": "gray_logos",
-      "label": "Gray logos",
+      "label": "Grijze logo's",
       "default": false
     },
     {
@@ -178,24 +178,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
@@ -207,15 +207,15 @@
       "options": [
         {
           "value": "vertical",
-          "label": "Vertical"
+          "label": "Verticaal"
         },
         {
           "value": "horizontal",
-          "label": "Horizontal"
+          "label": "Horizontaal"
         }
       ],
       "default": "horizontal",
-      "label": "Desktop layout"
+      "label": "Desktop lay-out"
     },
     { 
       "type": "range",
@@ -224,11 +224,11 @@
       "max": 150,
       "step": 10,
       "default": 50,
-      "label": "Desktop logo height"
+      "label": "Hoogte desktop logo"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "Mobiel"
     },
     {
       "type": "range",
@@ -246,22 +246,22 @@
       "max": 150,
       "step": 10,
       "default": 50,
-      "label": "Mobile logo height"
+      "label": "Hoogte mobiel logo"
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "LET OP: ALLEEN in de thema-editor kunnen pagineringstipjes worden gedupliceerd na het wijzigen van sectie-instellingen. Om dit te verhelpen, klikt u eenvoudig op Opslaan. Dit heeft GEEN EFFECT op de gepubliceerde website."
     },
     {
       "type": "checkbox",
       "id": "mobile_slider",
       "default": true,
-      "label": "Enable mobile slider"
+      "label": "Mobiele schuifregelaar inschakelen"
     },
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Autoplay",
+      "label": "Automatisch afspelen",
       "default": true
     },
     {
@@ -272,12 +272,12 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "Snelheid automatisch afspelen"
     },
     {
       "type": "checkbox",
       "id": "show_dots",
-      "label": "Show dots",
+      "label": "Punten weergeven",
       "default": true
     },
     {
@@ -306,26 +306,26 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt Achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#121212",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
@@ -346,7 +346,7 @@
         {
           "type": "checkbox",
           "id": "target_blank",
-          "label": "Open link in a new tab",
+          "label": "Link openen in een nieuw tabblad",
           "default": false
         }
       ]
@@ -373,4 +373,3 @@
   }
 }
 {% endschema %}
-
