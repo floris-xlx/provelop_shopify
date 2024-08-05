@@ -51,8 +51,8 @@
 <section class="color-{{ section.settings.color_scheme }} {% if section.settings.secondary_background %}background-secondary{% else %}gradient{% endif %} content-for-grouping {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class="section-id-btn button" data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="page-width section-{{ section.id }}-padding{% if section.settings.secondary_background %} isolate{% endif %}">
@@ -4266,26 +4266,26 @@
     },
     {
       "type": "estimated_shipping",
-      "name": "Estimated shipping",
+      "name": "Geschatte verzending",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "icon",
           "default": "local_shipping",
-          "label": "Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "Ingevuld pictogram"
         },
         {
           "type": "image_picker",
           "id": "custom_icon",
-          "label": "Custom icon"
+          "label": "Aangepast pictogram"
         },
         {
           "type": "select",
@@ -4293,7 +4293,7 @@
           "options": [
             {
               "value": "small",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "medium",
@@ -4301,11 +4301,11 @@
             },
             {
               "value": "large",
-              "label": "Large"
+              "label": "Groot"
             }
           ],
           "default": "medium",
-          "label": "Icon size"
+          "label": "Pictogramgrootte"
         },
         {
           "type": "select",
@@ -4313,63 +4313,63 @@
           "options": [
             {
               "value": "top",
-              "label": "Top"
+              "label": "Boven"
             },
             {
               "value": "middle",
-              "label": "Middle"
+              "label": "Midden"
             }
           ],
           "default": "top",
-          "label": "Icon alignment"
+          "label": "Pictogramuitlijning"
         },
         {
           "type": "richtext",
           "id": "message",
-          "label": "Text",
-          "default": "<p>Get it between <strong>[start_date]</strong> and <strong>[end_date]</strong>.</p>",
-          "info": "Use [start_date] to display the earliest date the package can arrive and [end_date] to display the latest date the package can arrive."
+          "label": "Tekst",
+          "default": "<p>Ontvang het tussen <strong>[start_date]</strong> en <strong>[end_date]</strong>.</p>",
+          "info": "Gebruik [start_date] om de vroegste datum weer te geven waarop het pakket kan aankomen en [end_date] om de laatste datum weer te geven waarop het pakket kan aankomen."
         },
         {
           "type": "number",
           "id": "min_shipping_days",
-          "label": "Minimum shipping days",
+          "label": "Minimale verzenddagen",
           "default": 7
         },
         {
           "type": "number",
           "id": "max_shipping_days",
-          "label": "Maximum shipping days",
+          "label": "Maximale verzenddagen",
           "default": 15
         },
         {
           "type": "select",
           "id": "date_format",
-          "label": "Date format",
+          "label": "Datumformaat",
           "options": [
             {
               "value": "day_mm_dd",
-              "label": "Monday, February 1st"
+              "label": "Maandag, 1 februari"
             },
             {
               "value": "day_dd_mm",
-              "label": "Monday, 1. February"
+              "label": "Maandag, 1. februari"
             },
             {
               "value": "mm_dd",
-              "label": "February 1st"
+              "label": "1 februari"
             },
             {
               "value": "dd_mm",
-              "label": "1. February"
+              "label": "1. februari"
             },
             {
               "value": "dd_mm_no_dot",
-              "label": "1 February"
+              "label": "1 februari"
             },
             {
               "value": "day_dd_mm_numeric",
-              "label": "Monday, 01. 02."
+              "label": "Maandag, 01. 02."
             },
             {
               "value": "dd_mm_numeric",
@@ -4381,18 +4381,18 @@
         {
           "type": "text",
           "id": "days_labels",
-          "label": "Day labels",
-          "default": "Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"
+          "label": "Daglabels",
+          "default": "Maandag, Dinsdag, Woensdag, Donderdag, Vrijdag, Zaterdag, Zondag"
         },
         {
           "type": "text",
           "id": "months_labels",
-          "label": "Month labels",
-          "default": "January, February, March, April, May, June, July, August, September, October, November, December"
+          "label": "Maandlabels",
+          "default": "Januari, Februari, Maart, April, Mei, Juni, Juli, Augustus, September, Oktober, November, December"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -4401,7 +4401,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 24
         },
         {
@@ -4411,230 +4411,230 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Ondermarge",
           "default": 24
         }
       ]
     },
     {
       "type": "shipping_checkpoints",
-      "name": "Shipping checkpoints",
+      "name": "Verzendcontrolepunten",
       "limit": 1,
       "settings": [
         {
           "type": "header",
-          "content": "How to use"
+          "content": "Hoe te gebruiken"
         },
         {
           "type": "paragraph",
-          "content": "Use [start_date} and {end_date} to automatically display the dates calculated based on the required days needed you enter."
+          "content": "Gebruik [start_date} en {end_date} om automatisch de datums weer te geven die zijn berekend op basis van de vereiste dagen die u invoert."
         },
         {
           "type": "header",
-          "content": "Checkpoint #1"
+          "content": "Controlepunt #1"
         },
         {
           "type": "text",
           "id": "icon_1",
           "default": "add_shopping_cart",
-          "label": "#1 Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "#1 Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_1",
           "default": false,
-          "label": "#1 Filled icon"
+          "label": "#1 Ingevuld pictogram"
         },
         {
           "type": "image_picker",
           "id": "icon_1_image",
-          "label": "#1 Custom icon"
+          "label": "#1 Aangepast pictogram"
         },
         {
           "type": "inline_richtext",
           "id": "top_text_1",
-          "label": "#1 Top Text",
+          "label": "#1 Bovenste tekst",
           "default": "<strong>[start_date]</strong>"
         },
         {
           "type": "inline_richtext",
           "id": "bottom_text_1",
-          "label": "#1 Bottom Text",
-          "default": "Ordered"
+          "label": "#1 Onderste tekst",
+          "default": "Besteld"
         },
         {
           "type": "number",
           "id": "min_days_1",
-          "label": "#1 Minimum required days",
+          "label": "#1 Minimum vereiste dagen",
           "default": 0
         },
         {
           "type": "number",
           "id": "max_days_1",
-          "label": "#1 Maximum required days",
+          "label": "#1 Maximum vereiste dagen",
           "default": 0
         },
         {
           "type": "header",
-          "content": "Checkpoint #2"
+          "content": "Controlepunt #2"
         },
         {
           "type": "text",
           "id": "icon_2",
           "default": "local_shipping",
-          "label": "#2 Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "#2 Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_2",
           "default": false,
-          "label": "#2 Filled icon"
+          "label": "#2 Ingevuld pictogram"
         },
         {
           "type": "image_picker",
           "id": "icon_2_image",
-          "label": "#2 Custom icon"
+          "label": "#2 Aangepast pictogram"
         },
         {
           "type": "inline_richtext",
           "id": "top_text_2",
-          "label": "#2 Top Text",
+          "label": "#2 Bovenste tekst",
           "default": "<strong>[start_date] - [end_date]</strong>"
         },
         {
           "type": "inline_richtext",
           "id": "bottom_text_2",
-          "label": "#2 Bottom Text",
-          "default": "Order Ready"
+          "label": "#2 Onderste tekst",
+          "default": "Bestelling gereed"
         },
         {
           "type": "number",
           "id": "min_days_2",
-          "label": "#2 Minimum required days",
+          "label": "#2 Minimum vereiste dagen",
           "default": 1
         },
         {
           "type": "number",
           "id": "max_days_2",
-          "label": "#2 Maximum required days",
+          "label": "#2 Maximum vereiste dagen",
           "default": 2
         },
         {
           "type": "header",
-          "content": "Checkpoint #3"
+          "content": "Controlepunt #3"
         },
         {
           "type": "text",
           "id": "icon_3",
           "default": "redeem",
-          "label": "#3 Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "#3 Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_3",
           "default": false,
-          "label": "#3 Filled icon"
+          "label": "#3 Ingevuld pictogram"
         },
         {
           "type": "image_picker",
           "id": "icon_3_image",
-          "label": "#3 Custom icon"
+          "label": "#3 Aangepast pictogram"
         },
         {
           "type": "inline_richtext",
           "id": "top_text_3",
-          "label": "#3 Top Text",
+          "label": "#3 Bovenste tekst",
           "default": "<strong>[start_date] - [end_date]</strong>"
         },
         {
           "type": "inline_richtext",
           "id": "bottom_text_3",
-          "label": "#3 Bottom Text",
-          "default": "Delivered"
+          "label": "#3 Onderste tekst",
+          "default": "Geleverd"
         },
         {
           "type": "number",
           "id": "min_days_3",
-          "label": "#3 Minimum required days",
+          "label": "#3 Minimum vereiste dagen",
           "default": 10
         },
         {
           "type": "number",
           "id": "max_days_3",
-          "label": "#3 Maximum required days",
+          "label": "#3 Maximum vereiste dagen",
           "default": 12
         },
         {
           "type": "header",
-          "content": "Checkpoint #4"
+          "content": "Controlepunt #4"
         },
         {
           "type": "text",
           "id": "icon_4",
-          "label": "#4 Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "#4 Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon_4",
           "default": false,
-          "label": "#4 Filled icon"
+          "label": "#4 Ingevuld pictogram"
         },
         {
           "type": "inline_richtext",
           "id": "top_text_4",
-          "label": "#4 Top Text"
+          "label": "#4 Bovenste tekst"
         },
         {
           "type": "inline_richtext",
           "id": "bottom_text_4",
-          "label": "#4 Bottom Text"
+          "label": "#4 Onderste tekst"
         },
         {
           "type": "number",
           "id": "min_days_4",
-          "label": "#4 Minimum required days"
+          "label": "#4 Minimum vereiste dagen"
         },
         {
           "type": "number",
           "id": "max_days_4",
-          "label": "#4 Maximum required days"
+          "label": "#4 Maximum vereiste dagen"
         },
         {
           "type": "header",
-          "content": "Date formating"
+          "content": "Datumopmaak"
         },
         {
           "type": "select",
           "id": "date_format",
-          "label": "Date format",
+          "label": "Datumformaat",
           "options": [
             {
               "value": "day_mm_dd",
-              "label": "Monday, February 1st"
+              "label": "Maandag, 1 februari"
             },
             {
               "value": "day_dd_mm",
-              "label": "Monday, 1. February"
+              "label": "Maandag, 1. februari"
             },
             {
               "value": "mm_dd",
-              "label": "February 1st"
+              "label": "1 februari"
             },
             {
               "value": "dd_mm",
-              "label": "1. February"
+              "label": "1. februari"
             },
             {
               "value": "dd_mm_no_dot",
-              "label": "1 February"
+              "label": "1 februari"
             },
             {
               "value": "day_dd_mm_numeric",
-              "label": "Monday, 01. 02."
+              "label": "Maandag, 01. 02."
             },
             {
               "value": "dd_mm_numeric",
@@ -4646,18 +4646,18 @@
         {
           "type": "text",
           "id": "days_labels",
-          "label": "Day labels",
-          "default": "Mon, Tue, Wed, Thu, Fri, Sat, Sun"
+          "label": "Daglabels",
+          "default": "Ma, Di, Wo, Do, Vr, Za, Zo"
         },
         {
           "type": "text",
           "id": "months_labels",
-          "label": "Month labels",
-          "default": "Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec"
+          "label": "Maandlabels",
+          "default": "Jan, Feb, Mrt, Apr, Mei, Jun, Jul, Aug, Sep, Okt, Nov, Dec"
         },
         {
           "type": "header",
-          "content": "Color"
+          "content": "Kleur"
         },
         {
           "type": "select",
@@ -4685,11 +4685,11 @@
             }
           ],
           "default": "inverse",
-          "label": "Bar color scheme"
+          "label": "Balk kleurenschema"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -4698,7 +4698,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 24
         },
         {
@@ -4708,7 +4708,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Ondermarge",
           "default": 24
         }
       ]
@@ -4719,7 +4719,7 @@
       "settings": [
         {
           "type": "header",
-          "content": "General"
+          "content": "Algemeen"
         },
         {
           "type": "select",
@@ -4727,114 +4727,114 @@
           "options": [
             {
               "value": "text",
-              "label": "Text"
+              "label": "Tekst"
             },
             {
               "value": "number",
-              "label": "Number"
+              "label": "Nummer"
             },
             {
               "value": "textarea",
-              "label": "Textarea"
+              "label": "Tekstvak"
             },
             {
               "value": "pills",
-              "label": "Pills"
+              "label": "Pillen"
             },
             {
               "value": "select",
-              "label": "Dropdown"
+              "label": "Keuzelijst"
             }
           ],
           "default": "text",
-          "label": "Field type"
+          "label": "Veldtype"
         },
         {
           "type": "text",
           "id": "field_name",
-          "label": "Field name",
+          "label": "Veldnaam",
           "default": "Name",
-          "info": "Custom property name that's sent to order information."
+          "info": "Aangepaste eigenschapsnaam die naar bestelinformatie wordt verzonden."
         },
         {
           "type": "text",
           "id": "field_label",
-          "label": "Field label",
-          "default": "Your name"
+          "label": "Veldlabel",
+          "default": "Uw naam"
         },
         {
           "type": "checkbox",
           "id": "full_width",
-          "label": "Full width input & dropdown",
+          "label": "Volledige breedte invoer & dropdown",
           "default": false
         },
         {
           "type": "header",
-          "content": "Validation"
+          "content": "Validatie"
         },
         {
           "type": "checkbox",
           "id": "required",
           "default": false,
-          "label": "Required field",
-          "info": "Disables all Add to Cart buttons unless all required fields are filled out & displays an error message."
+          "label": "Verplicht veld",
+          "info": "Schakelt alle Toevoegen aan winkelwagen-knoppen uit tenzij alle verplichte velden zijn ingevuld en toont een foutmelding."
         },
         {
           "type": "text",
           "id": "atc_error_message",
-          "default": "Please enter your name",
-          "label": "ATC button error message",
-          "info": "Displayed inside the Add to Cart button if a required field is empty. If multiple required fields exist, the message from the last one will be applied."
+          "default": "Voer uw naam in",
+          "label": "Foutmelding knop Toevoegen aan winkelwagen",
+          "info": "Wordt weergegeven in de Toevoegen aan winkelwagen-knop als een verplicht veld leeg is. Als er meerdere verplichte velden zijn, wordt het bericht van het laatste veld toegepast."
         },
         {
           "type": "text",
           "id": "field_error_message",
-          "default": "This field is required!",
-          "label": "Field error message",
-          "info": "Displayed if a required field value is changed to empty."
+          "default": "Dit veld is verplicht!",
+          "label": "Foutmelding veld",
+          "info": "Wordt weergegeven als een verplicht veld leeg wordt gemaakt."
         },
         {
           "type": "header",
-          "content": "Text input"
+          "content": "Tekstinvoer"
         },
         {
           "type": "text",
           "id": "text_placeholder",
-          "label": "Placeholder",
-          "default": "Your name"
+          "label": "Plaatshouder",
+          "default": "Uw naam"
         },
         {
           "type": "number",
           "id": "text_max_characters",
-          "label": "Maximum characters"
+          "label": "Maximaal aantal tekens"
         },
         {
           "type": "header",
-          "content": "Number input"
+          "content": "Nummerinvoer"
         },
         {
           "type": "text",
           "id": "number_placeholder",
-          "label": "Placeholder"
+          "label": "Plaatshouder"
         },
         {
           "type": "number",
           "id": "number_min",
-          "label": "Minimum value"
+          "label": "Minimale waarde"
         },
         {
           "type": "number",
           "id": "number_max",
-          "label": "Maximum value"
+          "label": "Maximale waarde"
         },
         {
           "type": "header",
-          "content": "Textarea input"
+          "content": "Tekstvak invoer"
         },
         {
           "type": "text",
           "id": "textarea_placeholder",
-          "label": "Placeholder"
+          "label": "Plaatshouder"
         },
         {
           "type": "select",
@@ -4842,7 +4842,7 @@
           "options": [
             {
               "value": "small",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "medium",
@@ -4850,25 +4850,25 @@
             },
             {
               "value": "large",
-              "label": "Large"
+              "label": "Groot"
             }
           ],
           "default": "medium",
-          "label": "Height"
+          "label": "Hoogte"
         },
         {
           "type": "header",
-          "content": "Pills & Dropdown input"
+          "content": "Pillen & Dropdown invoer"
         },
         {
           "type": "text",
           "id": "select_options",
-          "label": "Options separated by comma",
-          "default": "Option 1,Option 2,Option 3"
+          "label": "Opties gescheiden door komma",
+          "default": "Optie 1,Optie 2,Optie 3"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -4877,7 +4877,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 15
         },
         {
@@ -4887,7 +4887,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onderste marge",
           "default": 15
         }
       ]
@@ -4922,14 +4922,14 @@
           "max": 30,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onderste marge",
           "default": 15
         }
       ]
     },
     {
       "type": "icon_with_text",
-      "name": "Icons with text",
+      "name": "Pictogrammen met tekst",
       "settings": [
         {
           "type": "select",
@@ -4969,7 +4969,7 @@
             }
           ],
           "default": "accent-1",
-          "label": "Icon color"
+          "label": "Kleur pictogram"
         },
         {
           "type": "header",
@@ -4983,7 +4983,7 @@
           "step": 4,
           "unit": "px",
           "default": 48,
-          "label": "Icon size"
+          "label": "Pictogramgrootte"
         },
         {
           "type": "range",
@@ -4993,7 +4993,7 @@
           "step": 2,
           "unit": "px",
           "default": 12,
-          "label": "Icon & text spacing"
+          "label": "Afstand pictogram & tekst"
         },
         {
           "type": "range",
@@ -5003,11 +5003,11 @@
           "step": 2,
           "unit": "px",
           "default": 18,
-          "label": "Text size"
+          "label": "Tekstgrootte"
         },
         {
           "type": "header",
-          "content": "Mobile"
+          "content": "Mobiel"
         },
         {
           "type": "range",
@@ -5017,7 +5017,7 @@
           "step": 4,
           "unit": "px",
           "default": 40,
-          "label": "Icon size"
+          "label": "Pictogramgrootte"
         },
         {
           "type": "range",
@@ -5027,7 +5027,7 @@
           "step": 2,
           "unit": "px",
           "default": 10,
-          "label": "Icon & text spacing"
+          "label": "Afstand pictogram & tekst"
         },
         {
           "type": "range",
@@ -5037,7 +5037,7 @@
           "step": 2,
           "unit": "px",
           "default": 14,
-          "label": "Text size"
+          "label": "Tekstgrootte"
         },
         {
           "type": "header",
@@ -5049,13 +5049,13 @@
           "id": "icon_1",
           "default": "favorite",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_1.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "icon_1_fill",
           "default": false,
-          "label": "First icon fill"
+          "label": "Eerste pictogram vullen"
         },
         {
           "type": "image_picker",
@@ -5065,7 +5065,7 @@
         {
           "type": "text",
           "id": "heading_1",
-          "default": "Heading",
+          "default": "Kop",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_1.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         },
@@ -5074,13 +5074,13 @@
           "id": "icon_2",
           "default": "undo",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_2.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "icon_2_fill",
           "default": false,
-          "label": "Second icon fill"
+          "label": "Tweede pictogram vullen"
         },
         {
           "type": "image_picker",
@@ -5090,7 +5090,7 @@
         {
           "type": "text",
           "id": "heading_2",
-          "default": "Heading",
+          "default": "Kop",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_2.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         },
@@ -5099,13 +5099,13 @@
           "id": "icon_3",
           "default": "local_shipping",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_3.label",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "icon_3_fill",
           "default": false,
-          "label": "Third icon fill"
+          "label": "Derde pictogram vullen"
         },
         {
           "type": "image_picker",
@@ -5115,13 +5115,13 @@
         {
           "type": "text",
           "id": "heading_3",
-          "default": "Heading",
+          "default": "Kop",
           "label": "t:sections.main-product.blocks.icon_with_text.settings.heading_3.label",
           "info": "t:sections.main-product.blocks.icon_with_text.settings.heading.info"
         },
         {
           "type": "header",
-          "content": "Block margin"
+          "content": "Blokmarge"
         },
         {
           "type": "range",
@@ -5130,7 +5130,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Top margin",
+          "label": "Bovenmarge",
           "default": 24
         },
         {
@@ -5140,7 +5140,7 @@
           "max": 45,
           "step": 3,
           "unit": "px",
-          "label": "Bottom margin",
+          "label": "Onderste marge",
           "default": 24
         }
       ]
@@ -5150,8 +5150,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -5160,18 +5160,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
@@ -5308,7 +5308,7 @@
     },
     {
       "type": "header",
-      "content": "Mobile media"
+      "content": "Mobiele media"
     },
     {
       "type": "range",
@@ -5324,7 +5324,7 @@
       "type": "checkbox",
       "id": "full_media_width",
       "default": false,
-      "label": "Use full page width"
+      "label": "Volledige paginabreedte gebruiken"
     },
     {
       "type": "header",
