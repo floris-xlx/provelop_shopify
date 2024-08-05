@@ -30,8 +30,8 @@
 <div class="multicolumn animate-section animate--hidden color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %} content-for-grouping {{ section.settings.visibility }}" data-mobile-columns="{{ section.settings.columns_mobile }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   {%- liquid
@@ -301,8 +301,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -311,35 +311,35 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "default": "Multicolumn",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Koptekst",
+      "info": "Vet bepaalde woorden om ze te markeren met een andere kleur."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Koptekst markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -348,25 +348,25 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Koptekst grootte"
     },
     {
       "type": "text",
       "id": "button_label",
       "label": "t:sections.multicolumn.settings.button_label.label",
-      "info": "Visible next to title when slider controls are under the slider."
+      "info": "Zichtbaar naast de titel wanneer schuifregelaarbesturingen onder de schuifregelaar staan."
     },
     {
       "type": "url",
@@ -376,19 +376,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Visible next to title when slider controls are under the slider."
+      "label": "Toevoegen aan winkelwagen knoplabel",
+      "info": "Zichtbaar naast de titel wanneer schuifregelaarbesturingen onder de schuifregelaar staan."
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "ATC Aangepast product",
+      "info": "BELANGRIJK: Als leeg, voegt de knop het hoofdproduct VAN DE PRODUCTPAGINA toe aan de winkelwagen (INCLUSIEF de geselecteerde variant/hoeveelheid, upsells etc.)"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "ATC Aangepast product winkelwagen overslaan"
     },
     {
       "type": "select",
@@ -404,28 +404,28 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
-      "content": "Columns"
+      "content": "Kolommen"
     },
     {
       "type": "select",
@@ -433,19 +433,19 @@
       "options": [
         {
           "value": "third",
-          "label": "One-third width of column"
+          "label": "Eenderde breedte van kolom"
         },
         {
           "value": "half",
-          "label": "Half width of column"
+          "label": "Halve breedte van kolom"
         },
         {
           "value": "full",
-          "label": "Full width of column"
+          "label": "Volledige breedte van kolom"
         }
       ],
       "default": "full",
-      "label": "Media width"
+      "label": "Media breedte"
     },
     {
       "type": "select",
@@ -453,23 +453,23 @@
       "options": [
         {
           "value": "adapt",
-          "label": "Adapt to media"
+          "label": "Aanpassen aan media"
         },
         {
           "value": "portrait",
-          "label": "Portrait"
+          "label": "Portret"
         },
         {
           "value": "square",
-          "label": "Square"
+          "label": "Vierkant"
         },
         {
           "value": "circle",
-          "label": "Circle"
+          "label": "Cirkel"
         }
       ],
       "default": "square",
-      "label": "Media ratio"
+      "label": "Media verhouding"
     },
     {
       "type": "select",
@@ -493,7 +493,7 @@
       "options": [
         {
           "value": "bg-overlay",
-          "label": "Light overlay"
+          "label": "Lichte overlay"
         },
         {
           "value": "accent-1",
@@ -505,32 +505,32 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "bg-overlay",
-      "label": "Cards color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kaarten kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
-      "content": "Slider"
+      "content": "Schuifregelaar"
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "LET OP: ALLEEN in de thema-editor kunnen pagineringstipjes zich dupliceren na het wijzigen van sectie-instellingen. Om dit te verhelpen, klik gewoon op Opslaan. Dit heeft GEEN EFFECT op de gepubliceerde website."
     },
     {
       "type": "select",
@@ -538,11 +538,11 @@
       "options": [
         {
           "value": "slide",
-          "label": "Classic"
+          "label": "Klassiek"
         },
         {
           "value": "loop",
-          "label": "Infinite"
+          "label": "Oneindig"
         }
       ],
       "default": "slide",
@@ -551,7 +551,7 @@
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Enable autoplay",
+      "label": "Autoplay inschakelen",
       "default": false
     },
     {
@@ -562,7 +562,7 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "Autoplay snelheid"
     },
     {
       "type": "select",
@@ -578,24 +578,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         }
       ],
       "default": "inverse",
-      "label": "Arrows color scheme"
+      "label": "Pijlen kleurschema"
     },
     {
       "type": "checkbox",
       "id": "transparent_arrows",
-      "label": "Transparent arrows",
+      "label": "Transparante pijlen",
       "default": true
     },
     {
@@ -612,19 +612,19 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Text"
+          "label": "Tekst"
         }
       ],
       "default": "inverse",
-      "label": "Dots color scheme"
+      "label": "Punten kleurschema"
     },
     {
       "type": "header",
@@ -633,7 +633,7 @@
     {
       "type": "checkbox",
       "id": "desktop_full_page",
-      "label": "Full page width",
+      "label": "Volledige paginabreedte",
       "default": false
     },
     {
@@ -643,14 +643,14 @@
       "max": 10,
       "step": 1,
       "default": 3,
-      "label": "Columns desktop"
+      "label": "Kolommen desktop"
     },
     {
       "type": "checkbox",
       "id": "slider_desktop",
-      "label": "Enable desktop slider",
+      "label": "Desktop schuifregelaar inschakelen",
       "default": false,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "De onderstaande instellingen worden toegepast als deze optie is aangevinkt"
     },
     {
       "type": "range",
@@ -659,7 +659,7 @@
       "max": 10,
       "step": 1,
       "default": 1,
-      "label": "Slides to scroll on one move"
+      "label": "Dia's om te scrollen in één beweging"
     },
     {
       "type": "range",
@@ -668,7 +668,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Spacing",
+      "label": "Afstand",
       "default": 40
     },
     {
@@ -678,22 +678,22 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Preview of prev & next slide",
+      "label": "Voorvertoning van vorige & volgende dia",
       "default": 0
     },
     {
       "type": "checkbox",
       "id": "desktop_padding_calc",
-      "label": "Disable empty preview on first & last slide",
+      "label": "Lege voorvertoning uitschakelen op eerste & laatste dia",
       "default": true,
-      "info": "Moves the first slide to the left edge adn last one to the right if Preview value is enabled. Visible if type is set to Slider."
+      "info": "Verplaatst de eerste dia naar de linkerrand en de laatste naar rechts als Voorvertoningswaarde is ingeschakeld. Zichtbaar als type is ingesteld op Schuifregelaar."
     },
     {
       "type": "checkbox",
       "id": "desktop_adaptive_height",
-      "label": "Adaptive height",
+      "label": "Aanpasbare hoogte",
       "default": false,
-      "info": "Only available if Slides per page is set to 1."
+      "info": "Alleen beschikbaar als Dia's per pagina is ingesteld op 1."
     },
     {
       "type": "select",
@@ -701,15 +701,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de schuifregelaar"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "Punten positie"
     },
     {
       "type": "select",
@@ -717,23 +717,23 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de schuifregelaar"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "Aan de zijkanten van de schuifregelaar"
         }
       ],
       "default": "sides",
-      "label": "Arrows position"
+      "label": "Pijlen positie"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "Mobiel"
     },
     {
       "type": "select",
@@ -754,20 +754,20 @@
     {
       "type": "checkbox",
       "id": "slider_mobile",
-      "label": "Enable mobile slider",
+      "label": "Mobiele schuifregelaar inschakelen",
       "default": true,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "De onderstaande instellingen worden toegepast als deze optie is aangevinkt"
     },
     {
       "type": "checkbox",
       "id": "enable_mobile_preview",
-      "label": "Preview of prev & next slides",
+      "label": "Voorvertoning van vorige & volgende dia's",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "mobile_adaptive_height",
-      "label": "Adaptive height",
+      "label": "Aanpasbare hoogte",
       "default": false
     },
     {
@@ -776,15 +776,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de schuifregelaar"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "Punten positie"
     },
     {
       "type": "select",
@@ -792,19 +792,19 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de schuifregelaar"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "Aan de zijkanten van de schuifregelaar"
         }
       ],
       "default": "under",
-      "label": "Arrows position"
+      "label": "Pijlen positie"
     },
     {
       "type": "header",
@@ -832,67 +832,67 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_background",
       "default": "#dd1d1d",
-      "label": "Solid button background"
+      "label": "Achtergrond van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_text",
       "default": "#ffffff",
-      "label": "Solid button label"
+      "label": "Label van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_outline_button",
       "default": "#dd1d1d",
-      "label": "Outline button"
+      "label": "Omlijning van knop"
     },
     {
       "type": "header",
-      "content": "Custom cards color scheme",
-      "info": "Applied if Cards color scheme setting is set to Custom."
+      "content": "Aangepast kaarten kleurschema",
+      "info": "Toegepast als de instelling Kaarten kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_cards_colors_background",
       "default": "#F3F3F3",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_cards_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_cards_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
@@ -903,16 +903,16 @@
         {
           "type": "header",
           "content": "Media",
-          "info": "NOTE: Media is only available if Style is set to Cards"
+          "info": "OPMERKING: Media is alleen beschikbaar als Stijl is ingesteld op Kaarten"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Afbeelding"
         },
         {
           "type": "header",
-          "content": "or"
+          "content": "of"
         },
         {
           "type": "video",
