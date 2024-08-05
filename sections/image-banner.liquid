@@ -33,8 +33,8 @@
 
 {% if section.settings.display_id %}
   <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-    <span class="copy-text">Click to copy section ID</span>
-    <span class="copy-success">ID copied successfully!</span>
+    <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+    <span class="copy-success">ID succesvol gekopieerd!</span>
   </copy-button>
 {% endif %}
 {% if section.settings.url != blank %}<a href='{{ section.settings.url }}'>{% endif %}
@@ -200,8 +200,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -210,23 +210,23 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "Images"
+      "content": "Afbeeldingen"
     },
     {
       "type": "image_picker",
@@ -236,15 +236,15 @@
     {
       "type": "select",
       "id": "image_1_visibility",
-      "label": "Display first image on:",
+      "label": "Eerste afbeelding weergeven op:",
       "options": [
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
       "default": "always-display"
@@ -257,15 +257,15 @@
     {
       "type": "select",
       "id": "image_2_visibility",
-      "label": "Display second image on:",
+      "label": "Tweede afbeelding weergeven op:",
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
       "default": "always-display"
@@ -307,13 +307,13 @@
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "url",
       "id": "url",
       "label": "Link",
-      "info": "If added, the whole banner will be a clickable link. ATTENTION: Buttons block can NOT be combined with this. Nested links inside this whole banner link will cause errors."
+      "info": "Indien toegevoegd, wordt de hele banner een klikbare link. LET OP: Knoppenblok kan NIET worden gecombineerd met dit. Geneste links binnen deze hele bannerlink zullen fouten veroorzaken."
     },
     {
       "type": "select",
@@ -399,33 +399,33 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Visible when container displayed."
+      "label": "Kleurschema",
+      "info": "Zichtbaar wanneer container wordt weergegeven."
     },
     {
       "type": "select",
       "id": "transparent_container_color",
-      "label": "Transparent container text color",
+      "label": "Transparante container tekstkleur",
       "options": [
         {
           "value": "white",
-          "label": "White"
+          "label": "Wit"
         },
         {
           "value": "black",
-          "label": "Black"
+          "label": "Zwart"
         }
       ],
       "default": "white"
@@ -476,14 +476,14 @@
         {
           "type": "inline_richtext",
           "id": "title",
-          "default": "Image banner",
-          "label": "Heading",
-          "info": "Bold certain words to highlight them with a different color."
+          "default": "Afbeeldingsbanner",
+          "label": "Koptekst",
+          "info": "Vetgedrukte woorden om ze met een andere kleur te markeren."
         },
         {
           "type": "color",
           "id": "title_highlight_color",
-          "label": "Heading highlight color",
+          "label": "Koptekst markeerkleur",
           "default": "#6D388B"
         },
         {
@@ -492,19 +492,19 @@
           "options": [
             {
               "value": "h2",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "h1",
-              "label": "Medium"
+              "label": "Middel"
             },
             {
               "value": "h0",
-              "label": "Large"
+              "label": "Groot"
             }
           ],
           "default": "h1",
-          "label": "Heading size"
+          "label": "Koptekstgrootte"
         }
       ]
     },
@@ -516,7 +516,7 @@
         {
           "type": "text",
           "id": "text",
-          "default": "Give customers details about the banner image(s) or content on the template.",
+          "default": "Geef klanten details over de bannerafbeelding(en) of inhoud op de sjabloon.",
           "label": "t:sections.image-banner.blocks.text.settings.text.label"
         },
         {
@@ -549,7 +549,7 @@
         {
           "type": "text",
           "id": "button_label_1",
-          "default": "Button label",
+          "default": "Knoplabel",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_label_1.label",
           "info": "t:sections.image-banner.blocks.buttons.settings.button_label_1.info"
         },
@@ -567,7 +567,7 @@
         {
           "type": "text",
           "id": "button_label_2",
-          "default": "Button label",
+          "default": "Knoplabel",
           "label": "t:sections.image-banner.blocks.buttons.settings.button_label_2.label",
           "info": "t:sections.image-banner.blocks.buttons.settings.button_label_2.info"
         },
@@ -586,25 +586,25 @@
     },
     {
       "type": "atc_button",
-      "name":"Add to Cart button",
+      "name":"ATC Button",
       "limit": 1,
       "settings": [
         {
           "type": "text",
           "id": "button_label",
-          "label": "Button label",
-          "default": "Add to Cart"
+          "label": "Knoplabel",
+          "default": "Toevoegen aan winkelwagen"
         },
         {
           "type": "product",
           "id": "atc_product",
-          "label": "ATC Custom product",
-          "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+          "label": "ATC Aangepast product",
+          "info": "BELANGRIJK: Als leeg, zal de knop het hoofdproduct VAN DE PRODUCTPAGINA aan de winkelwagen toevoegen (INCLUSIEF de geselecteerde variant/hoeveelheid, upsells etc.)"
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "ATC Aangepast product winkelwagen overslaan"
         }
       ]
     }
