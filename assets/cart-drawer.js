@@ -64,7 +64,8 @@ class CartDrawer extends HTMLElement {
       event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
     });
 
-    cartDrawerNote.parentElement.addEventListener('keyup', onKeyUpEscape);
+    cartDrawerNote.parentElement.addEventListener('keyup');
+    let onKeyUpEscape = "";
   }
 
   renderContents(parsedState) {
