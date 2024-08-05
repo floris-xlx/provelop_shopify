@@ -23,8 +23,8 @@
 <div class="color-{{ section.settings.color_scheme }} color-scheme-{{ section.id }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="page-width section-{{ section.id }}-padding">
@@ -99,8 +99,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -109,31 +109,31 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "Track your order",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "default": "Volg je bestelling",
+      "label": "Kop",
+      "info": "Vetgedrukte woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kop markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -142,7 +142,7 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
@@ -150,34 +150,34 @@
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text",
-      "default": "<p>Please enter you tracking number below. If your tracking number doesn't work feel free to contact us at [shop email]</p>"
+      "label": "Tekst",
+      "default": "<p>Voer hieronder je trackingnummer in. Als je trackingnummer niet werkt, neem dan gerust contact met ons op via [winkel e-mail]</p>"
     },
     {
       "type": "text",
       "id": "input_label",
-      "label": "Input label",
-      "default": "Tracking number"
+      "label": "Invoerveld label",
+      "default": "Trackingnummer"
     },
     {
       "type": "text",
       "id": "button_label",
-      "label": "Button label",
-      "default": "TRACK"
+      "label": "Knop label",
+      "default": "VOLG"
     },
     {
       "type": "checkbox",
       "id": "button_full_width",
-      "label": "Use full width button style",
+      "label": "Gebruik volledige breedte knopstijl",
       "default": true
     },
     {
@@ -194,24 +194,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurenschema wordt bewerkt onderaan de sectie-instellingen."
     },
     {
       "type": "header",
@@ -239,38 +239,38 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurenschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_background",
       "default": "#dd1d1d",
-      "label": "Solid button background"
+      "label": "Achtergrond van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_text",
       "default": "#ffffff",
-      "label": "Solid button label"
+      "label": "Label van vaste knop"
     }
   ],
   "presets": [
