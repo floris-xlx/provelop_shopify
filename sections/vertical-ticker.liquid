@@ -79,8 +79,8 @@
 <div class="{% if section.settings.display_content != 'never' %}vertical-ticker-and-content section-group__container__child-grid{% endif %}{% if section.settings.display_content == 'desktop_only' %} vertical-ticker-and-content--content-desktop-only{% endif %}{% if section.settings.layout == 'ticker_first' %} vertical-ticker-and-content--ticker-first{% endif %} content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   {%- if section.settings.display_content != 'never' -%}
@@ -212,8 +212,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -222,18 +222,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
@@ -247,12 +247,12 @@
       "max": 16,
       "default": 8,
       "step": 1,
-      "label": "Number of rows displayed"
+      "label": "Aantal weergegeven rijen"
     },
     {
       "type": "range",
       "id": "speed",
-      "label": "Ticker speed",
+      "label": "Ticker snelheid",
       "min": 1,
       "max": 5,
       "default": 3,
@@ -261,15 +261,15 @@
     {
       "type": "select",
       "id": "text_size",
-      "label": "Text size",
+      "label": "Tekstgrootte",
       "options": [
         {
           "value": "2",
-          "label": "Extra small"
+          "label": "Extra klein"
         },
         {
           "value": "3",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "4",
@@ -277,11 +277,11 @@
         },
         {
           "value": "5",
-          "label": "Large"
+          "label": "Groot"
         },
         {
           "value": "6",
-          "label": "Extra large"
+          "label": "Extra groot"
         }
       ],
       "default": "4"
@@ -289,19 +289,19 @@
     {
       "type": "checkbox",
       "id": "italic_text",
-      "label": "Italic text",
+      "label": "Cursieve tekst",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "uppercase_text",
-      "label": "Uppercase text",
+      "label": "Hoofdlettertekst",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "bold_text",
-      "label": "Bold text",
+      "label": "Vette tekst",
       "default": false
     },
     {
@@ -318,37 +318,37 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "accent-1",
-      "label": "Ticker color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Ticker kleurenschema",
+      "info": "Aangepast kleurenschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "select",
       "id": "layout",
-      "label": "Ticker placement",
+      "label": "Ticker plaatsing",
       "options": [
         {
           "value": "ticker_first",
-          "label": "Ticker first"
+          "label": "Ticker eerst"
         },
         {
           "value": "ticker_second",
-          "label": "Ticker second"
+          "label": "Ticker tweede"
         }
       ],
       "default": "ticker_second"
@@ -360,7 +360,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Ticker top padding",
+      "label": "Ticker bovenste opvulling",
       "default": 40
     },
     {
@@ -370,29 +370,29 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Ticker bottom padding",
+      "label": "Ticker onderste opvulling",
       "default": 40
     },
     {
       "type": "header",
-      "content": "Content"
+      "content": "Inhoud"
     },
     {
       "type": "select",
       "id": "display_content",
-      "label": "Display content",
+      "label": "Inhoud weergeven",
       "options": [
         {
           "value": "always",
-          "label": "Always"
+          "label": "Altijd"
         },
         {
           "value": "desktop_only",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "never",
-          "label": "Never"
+          "label": "Nooit"
         }
       ],
       "default": "always"
@@ -401,13 +401,13 @@
       "type": "inline_richtext",
       "id": "content_heading",
       "default": "Vertical Ticker",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Koptekst",
+      "info": "Maak bepaalde woorden vet om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "content_title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Koptekst markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -416,7 +416,7 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
@@ -424,22 +424,22 @@
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Koptekst grootte"
     },
     {
       "type": "richtext",
       "id": "content_text",
-      "label": "Text",
-      "default": "<p>Talk about features, perks, or benefits of your brand or product </p>"
+      "label": "Tekst",
+      "default": "<p>Praat over kenmerken, voordelen of voordelen van uw merk of product </p>"
     },
     {
       "type": "text",
       "id": "button_label",
-      "default": "Button label",
+      "default": "Knoplabel",
       "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
       "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
     },
@@ -457,19 +457,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "Toevoegen aan winkelwagen knoplabel",
+      "info": "Laat het label leeg om de knop Toevoegen aan winkelwagen te verbergen."
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "IMPORTANT: If empty, the button will add the main product FROM THE PRODUCT PAGE to cart (INCLUDING the selected variant/quantity, upsells etc.)"
+      "label": "ATC Aangepast product",
+      "info": "BELANGRIJK: Als leeg, zal de knop het hoofdproduct VAN DE PRODUCTPAGINA aan de winkelwagen toevoegen (INCLUSIEF de geselecteerde variant/hoeveelheid, upsells etc.)"
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "ATC Aangepast product winkelwagen overslaan"
     },
     {
       "type": "select",
@@ -485,36 +485,36 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Content color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Inhoud kleurenschema",
+      "info": "Aangepast kleurenschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "image_picker",
       "id": "content_bg_image",
-      "label": "Background image",
-      "info": "Note: GIFs are supported as well"
+      "label": "Achtergrondafbeelding",
+      "info": "Opmerking: GIF's worden ook ondersteund"
     },
     {
       "type": "color",
       "id": "overlay_color",
       "default": "#000000",
-      "label": "Background overlay color"
+      "label": "Achtergrond overlay kleur"
     },
     {
       "type": "range",
@@ -524,7 +524,7 @@
       "step": 1,
       "default": 0,
       "unit": "%",
-      "label": "Background overlay opacity"
+      "label": "Achtergrond overlay doorzichtigheid"
     },
     {
       "type": "range",
@@ -533,7 +533,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Content top padding",
+      "label": "Inhoud bovenste opvulling",
       "default": 36
     },
     {
@@ -543,84 +543,84 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Content bottom padding",
+      "label": "Inhoud onderste opvulling",
       "default": 24
     },
     {
       "type": "header",
-      "content": "Custom ticker color scheme",
-      "info": "Applied if Ticker color scheme setting is set to Custom."
+      "content": "Aangepast ticker kleurenschema",
+      "info": "Toegepast als de instelling Ticker kleurenschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_ticker_colors_background",
       "default": "#dd1d1d",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_ticker_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_ticker_colors_text",
       "default": "#FFFFFF",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "header",
-      "content": "Custom content color scheme",
-      "info": "Applied if Content color scheme setting is set to Custom."
+      "content": "Aangepast inhoud kleurenschema",
+      "info": "Toegepast als de instelling Inhoud kleurenschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_background",
       "default": "#dd1d1d",
-      "label": "Solid button background"
+      "label": "Achtergrond van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_text",
       "default": "#ffffff",
-      "label": "Solid button label"
+      "label": "Label van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_outline_button",
       "default": "#dd1d1d",
-      "label": "Outline button"
+      "label": "Omlijning van knop"
     }
   ],
   "blocks": [
     {
       "type": "text",
-      "name": "Text",
+      "name": "Tekst",
       "settings": [
         {
           "type": "text",
           "id": "title",
           "default": "Dropship Academy Theme",
-          "label": "Text"
+          "label": "Tekst"
         }
       ]
     }
