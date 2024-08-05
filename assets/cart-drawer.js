@@ -64,7 +64,17 @@ class CartDrawer extends HTMLElement {
       event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
     });
 
-    cartDrawerNote.parentElement.addEventListener('keyup', onKeyUpEscape);
+    // Define the onKeyUpEscape function
+function onKeyUpEscape(event) {
+    if (event.key === 'Escape') {
+        // Your logic when Escape key is pressed
+        console.log('Escape key was pressed');
+        // You can add more code here to handle the Escape key press event
+    }
+}
+
+// Assuming cartDrawerNote is already defined
+cartDrawerNote.parentElement.addEventListener('keyup', onKeyUpEscape);
   }
 
   renderContents(parsedState) {
