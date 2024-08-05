@@ -27,8 +27,8 @@
 <div class="icon-bar multicolumn animate-section animate--hidden color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient{% if section.settings.title == blank %} no-heading{% endif %} content-for-grouping {{ section.settings.visibility }}" data-mobile-columns="{{ section.settings.columns_mobile }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   {%- liquid
@@ -166,8 +166,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in een knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -176,35 +176,35 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "default": "Icon bar",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Kop",
+      "info": "Maak bepaalde woorden vet om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kop markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -213,7 +213,7 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
@@ -221,16 +221,16 @@
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "select",
@@ -246,28 +246,28 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
-      "content": "Icons"
+      "content": "Pictogrammen"
     },
     {
       "type": "select",
@@ -275,15 +275,15 @@
       "options": [
         {
           "value": "horizontal",
-          "label": "Horizontal"
+          "label": "Horizontaal"
         },
         {
           "value": "vertical",
-          "label": "Vertical"
+          "label": "Verticaal"
         }
       ],
       "default": "vertical",
-      "label": "Icon layout"
+      "label": "Pictogramindeling"
     },
     {
       "type": "select",
@@ -291,7 +291,7 @@
       "options": [
         {
           "value": "small",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "medium",
@@ -299,11 +299,11 @@
         },
         {
           "value": "large",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "medium",
-      "label": "Icon Size"
+      "label": "Pictogramgrootte"
     },
     {
       "type": "select",
@@ -319,19 +319,19 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "text",
-          "label": "Text"
+          "label": "Tekst"
         }
       ],
       "default": "accent-1",
-      "label": "Icon color"
+      "label": "Pictogramkleur"
     },
     {
       "type": "select",
@@ -339,7 +339,7 @@
       "options": [
         {
           "value": "bg-overlay",
-          "label": "Light overlay"
+          "label": "Lichte overlay"
         },
         {
           "value": "accent-1",
@@ -351,24 +351,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Cards color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema kaarten",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
@@ -376,7 +376,7 @@
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "LET OP: ALLEEN in de thema-editor kunnen pagineringstipjes worden gedupliceerd na het wijzigen van sectie-instellingen. Om dit te verhelpen, klikt u eenvoudig op Opslaan. Dit heeft GEEN EFFECT op de gepubliceerde website."
     },
     {
       "type": "select",
@@ -384,11 +384,11 @@
       "options": [
         {
           "value": "slide",
-          "label": "Classic"
+          "label": "Klassiek"
         },
         {
           "value": "loop",
-          "label": "Infinite"
+          "label": "Oneindig"
         }
       ],
       "default": "slide",
@@ -397,7 +397,7 @@
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Enable autoplay",
+      "label": "Autoplay inschakelen",
       "default": false
     },
     {
@@ -408,7 +408,7 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "Autoplay snelheid"
     },
     {
       "type": "select",
@@ -424,24 +424,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         }
       ],
       "default": "inverse",
-      "label": "Arrows color scheme"
+      "label": "Kleurschema pijlen"
     },
     {
       "type": "checkbox",
       "id": "transparent_arrows",
-      "label": "Transparent arrows",
+      "label": "Transparante pijlen",
       "default": true
     },
     {
@@ -458,19 +458,19 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Text"
+          "label": "Tekst"
         }
       ],
       "default": "inverse",
-      "label": "Dots color"
+      "label": "Kleur stippen"
     },
     {
       "type": "header",
@@ -479,7 +479,7 @@
     {
       "type": "checkbox",
       "id": "desktop_full_page",
-      "label": "Full page width",
+      "label": "Volledige paginabreedte",
       "default": false
     },
     {
@@ -489,14 +489,14 @@
       "max": 10,
       "step": 1,
       "default": 4,
-      "label": "Columns desktop"
+      "label": "Kolommen desktop"
     },
     {
       "type": "checkbox",
       "id": "slider_desktop",
-      "label": "Enable desktop slider",
+      "label": "Desktop slider inschakelen",
       "default": false,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "De onderstaande instellingen worden toegepast als deze optie is aangevinkt"
     },
     {
       "type": "range",
@@ -505,7 +505,7 @@
       "max": 10,
       "step": 1,
       "default": 1,
-      "label": "Slides to scroll on one move"
+      "label": "Dia's om te scrollen in één beweging"
     },
     {
       "type": "range",
@@ -514,7 +514,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Spacing",
+      "label": "Afstand",
       "default": 40
     },
     {
@@ -524,22 +524,22 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Preview of prev & next slide",
+      "label": "Voorvertoning van vorige & volgende dia",
       "default": 0
     },
     {
       "type": "checkbox",
       "id": "desktop_padding_calc",
-      "label": "Disable empty preview on first & last slide",
+      "label": "Lege voorvertoning uitschakelen op eerste & laatste dia",
       "default": true,
-      "info": "Moves the first slide to the left edge adn last one to the right if Preview value is enabled. Visible if type is set to Slider."
+      "info": "Verplaatst de eerste dia naar de linkerrand en de laatste naar rechts als Voorvertoning is ingeschakeld. Zichtbaar als type is ingesteld op Slider."
     },
     {
       "type": "checkbox",
       "id": "desktop_adaptive_height",
-      "label": "Adaptive height",
+      "label": "Aanpasbare hoogte",
       "default": false,
-      "info": "Only available if Slides per page is set to 1."
+      "info": "Alleen beschikbaar als Dia's per pagina is ingesteld op 1."
     },
     {
       "type": "select",
@@ -547,15 +547,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "Positie stippen"
     },
     {
       "type": "select",
@@ -563,23 +563,23 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "Aan de zijkanten van de slider"
         }
       ],
       "default": "sides",
-      "label": "Arrows position"
+      "label": "Positie pijlen"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "Mobiel"
     },
     {
       "type": "select",
@@ -600,20 +600,20 @@
     {
       "type": "checkbox",
       "id": "slider_mobile",
-      "label": "Enable mobile slider",
+      "label": "Mobiele slider inschakelen",
       "default": true,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "De onderstaande instellingen worden toegepast als deze optie is aangevinkt"
     },
     {
       "type": "checkbox",
       "id": "enable_mobile_preview",
-      "label": "Preview of prev & next slides",
+      "label": "Voorvertoning van vorige & volgende dia's",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "mobile_adaptive_height",
-      "label": "Adaptive height",
+      "label": "Aanpasbare hoogte",
       "default": false
     },
     {
@@ -622,15 +622,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "Positie stippen"
     },
     {
       "type": "select",
@@ -638,19 +638,19 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "Aan de zijkanten van de slider"
         }
       ],
       "default": "under",
-      "label": "Arrows position"
+      "label": "Positie pijlen"
     },
     {
       "type": "header",
@@ -678,49 +678,49 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "header",
-      "content": "Custom cards color scheme",
-      "info": "Applied if Cards color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema kaarten",
+      "info": "Toegepast als de instelling Kleurschema kaarten is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_cards_colors_background",
       "default": "#F3F3F3",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_cards_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_cards_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
@@ -732,31 +732,31 @@
           "type": "text",
           "id": "icon",
           "default": "check_circle",
-          "label": "Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "Pictogram",
+          "info": "[Bekijk alle beschikbare pictogrammen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "Ingevuld pictogram"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Custom icon"
+          "label": "Aangepast pictogram"
         },
         {
           "type": "text",
           "id": "title",
-          "default": "Icon",
-          "label": "Heading"
+          "default": "Pictogram",
+          "label": "Kop"
         },
         {
           "type": "richtext",
           "id": "text",
-          "default": "<p>Pair text with an icon to focus on your chosen product, collection, or blog post<p>",
-          "label": "Text"
+          "default": "<p>Combineer tekst met een pictogram om je gekozen product, collectie of blogpost te benadrukken<p>",
+          "label": "Tekst"
         }
       ]
     }
