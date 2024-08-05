@@ -31,8 +31,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class="section-id-btn button" data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   {%- liquid
@@ -207,13 +207,13 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "select",
@@ -221,18 +221,18 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
@@ -249,29 +249,29 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
-      "content": "Content layout",
-      "info": "Applies to the heading, subheading and text."
+      "content": "Inhoud lay-out",
+      "info": "Van toepassing op de kop, subkop en tekst."
     },
     {
       "type": "select",
@@ -279,18 +279,18 @@
       "options": [
         {
           "value": "above",
-          "label": "Above reviews"
+          "label": "Boven beoordelingen"
         },
         {
           "value": "left",
-          "label": "Left side of the reviews"
+          "label": "Linkerkant van de beoordelingen"
         },
         {
           "value": "right",
-          "label": "Right side of the reviews"
+          "label": "Rechterkant van de beoordelingen"
         }
       ],
-      "label": "Desktop content position",
+      "label": "Desktop inhoud positie",
       "default": "above"
     },
     {
@@ -299,35 +299,35 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Links"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Midden"
         },
         {
           "value": "right",
-          "label": "Right"
+          "label": "Rechts"
         }
       ],
-      "label": "Desktop content alignment",
+      "label": "Desktop inhoud uitlijning",
       "default": "center"
     },
     {
       "type": "header",
-      "content": "Heading"
+      "content": "Kop"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "default": "Trustpilot reviews",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Kop",
+      "info": "Vet bepaalde woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kop markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -336,37 +336,37 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "header",
-      "content": "Subheading"
+      "content": "Subkop"
     },
     {
       "type": "inline_richtext",
       "id": "subtitle",
-      "default": "Excellent [rating] <strong>/ 5</strong> [rating_stars]",
-      "label": "Subheading",
-      "info": "Use [rating] to display the \"Rating text\" and [rating_stars] to display rating stars."
+      "default": "Uitstekend [rating] <strong>/ 5</strong> [rating_stars]",
+      "label": "Subkop",
+      "info": "Gebruik [rating] om de \"Beoordelingstekst\" weer te geven en [rating_stars] om beoordelingssterren weer te geven."
     },
     {
       "type": "inline_richtext",
       "id": "subheading_rating_text",
-      "label": "Rating text",
+      "label": "Beoordelingstekst",
       "default": "<strong>4.8</strong>",
-      "info": "Displays a highlighted text that replaces [rating] in the Subtitle."
+      "info": "Geeft een gemarkeerde tekst weer die [rating] in de Subkop vervangt."
     },
     {
       "type": "range",
@@ -376,7 +376,7 @@
       "step": 1,
       "unit": "px",
       "default": 18,
-      "label": "Mobile subheading text size"
+      "label": "Mobiele subkop tekstgrootte"
     },
     {
       "type": "range",
@@ -386,7 +386,7 @@
       "step": 1,
       "unit": "px",
       "default": 20,
-      "label": "Desktop subheading text size"
+      "label": "Desktop subkop tekstgrootte"
     },
     {
       "type": "select",
@@ -394,56 +394,56 @@
       "options": [
         {
           "value": "headings",
-          "label": "Headings"
+          "label": "Koppen"
         },
         {
           "value": "body",
-          "label": "Body"
+          "label": "Lichaam"
         }
       ],
       "default": "body",
-      "label": "Subheading font family"
+      "label": "Subkop lettertype"
     },
     {
       "type": "color",
       "id": "star_color",
       "default": "#00b67a",
-      "label": "Active stars container color"
+      "label": "Actieve sterren containerkleur"
     },
     {
       "type": "color",
       "id": "bg_star_color",
       "default": "#c8c8c8",
-      "label": "Background stars container color"
+      "label": "Achtergrond sterren containerkleur"
     },
     {
       "type": "color",
       "id": "star_symbol_color",
       "default": "#fff",
-      "label": "Stars inside symbol color"
+      "label": "Sterren binnen symbool kleur"
     },
     {
       "type": "range",
       "id": "stars_rating",
-      "label": "Stars rating",
+      "label": "Sterren beoordeling",
       "min": 1,
       "max": 5,
       "step": 0.5,
       "default": 5,
-      "info": "Rating of the stars displayed in the Subheading."
+      "info": "Beoordeling van de sterren weergegeven in de Subkop."
     },
     {
       "type": "header",
-      "content": "Text"
+      "content": "Tekst"
     },
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "header",
-      "content": "Review cards"
+      "content": "Beoordelingskaarten"
     },
     {
       "type": "range",
@@ -452,7 +452,7 @@
       "max": 40,
       "step": 2,
       "unit": "px",
-      "label": "Corner radius",
+      "label": "Hoekradius",
       "default": 16
     },
     {
@@ -461,22 +461,22 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Links"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Midden"
         }
       ],
       "default": "center",
-      "label": "Text alignment"
+      "label": "Tekstuitlijning"
     },
     {
       "type": "checkbox",
       "id": "show_stars",
       "default": true,
-      "label": "Show stars",
-      "info": "Stars rating & color is changed in block settings."
+      "label": "Sterren weergeven",
+      "info": "Sterrenbeoordeling & kleur wordt gewijzigd in blokinstellingen."
     },
     {
       "type": "select",
@@ -492,24 +492,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-2",
-      "label": "Cards color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema kaarten",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
@@ -517,7 +517,7 @@
     },
     {
       "type": "paragraph",
-      "content": "ATTENTION: ONLY in the theme editor, pagination dots might duplicate after changing section settings. To overcome this, simply click Save. This has NO EFFECT on the published website."
+      "content": "LET OP: ALLEEN in de thema-editor kunnen paginatiepunten worden gedupliceerd na het wijzigen van sectie-instellingen. Om dit te verhelpen, klikt u eenvoudig op Opslaan. Dit heeft GEEN EFFECT op de gepubliceerde website."
     },
     {
       "type": "select",
@@ -525,11 +525,11 @@
       "options": [
         {
           "value": "slide",
-          "label": "Classic"
+          "label": "Klassiek"
         },
         {
           "value": "loop",
-          "label": "Infinite"
+          "label": "Oneindig"
         }
       ],
       "default": "slide",
@@ -538,7 +538,7 @@
     {
       "type": "checkbox",
       "id": "autoplay",
-      "label": "Enable autoplay",
+      "label": "Autoplay inschakelen",
       "default": false
     },
     {
@@ -549,7 +549,7 @@
       "step": 0.5,
       "default": 5,
       "unit": "sec",
-      "label": "Autoplay speed"
+      "label": "Autoplay snelheid"
     },
     {
       "type": "select",
@@ -577,12 +577,12 @@
         }
       ],
       "default": "inverse",
-      "label": "Arrows color scheme"
+      "label": "Kleurschema pijlen"
     },
     {
       "type": "checkbox",
       "id": "transparent_arrows",
-      "label": "Transparent arrows",
+      "label": "Transparante pijlen",
       "default": true
     },
     {
@@ -611,7 +611,7 @@
         }
       ],
       "default": "inverse",
-      "label": "Dots color scheme"
+      "label": "Kleurschema punten"
     },
     {
       "type": "header",
@@ -620,7 +620,7 @@
     {
       "type": "checkbox",
       "id": "desktop_full_page",
-      "label": "Full page width",
+      "label": "Volledige paginabreedte",
       "default": false
     },
     {
@@ -630,14 +630,14 @@
       "max": 10,
       "step": 1,
       "default": 3,
-      "label": "Slides per page"
+      "label": "Dia's per pagina"
     },
     {
       "type": "checkbox",
       "id": "slider_desktop",
-      "label": "Enable desktop slider",
+      "label": "Desktop slider inschakelen",
       "default": false,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "De onderstaande instellingen worden toegepast als deze optie is aangevinkt"
     },
     {
       "type": "range",
@@ -646,7 +646,7 @@
       "max": 10,
       "step": 1,
       "default": 1,
-      "label": "Slides to scroll on one move"
+      "label": "Dia's om in één keer te scrollen"
     },
     {
       "type": "range",
@@ -655,7 +655,7 @@
       "max": 100,
       "step": 4,
       "unit": "px",
-      "label": "Spacing",
+      "label": "Afstand",
       "default": 24
     },
     {
@@ -665,22 +665,22 @@
       "max": 150,
       "step": 5,
       "unit": "px",
-      "label": "Preview of prev & next slide",
+      "label": "Voorvertoning van vorige & volgende dia",
       "default": 0
     },
     {
       "type": "checkbox",
       "id": "desktop_padding_calc",
-      "label": "Disable empty preview on first & last slide",
+      "label": "Lege voorvertoning op eerste & laatste dia uitschakelen",
       "default": true,
-      "info": "Moves the first slide to the left edge adn last one to the right if Preview value is enabled. Visible if type is set to Slider."
+      "info": "Verplaatst de eerste dia naar de linkerrand en de laatste naar rechts als Voorvertoningswaarde is ingeschakeld. Zichtbaar als type is ingesteld op Slider."
     },
     {
       "type": "checkbox",
       "id": "desktop_adaptive_height",
-      "label": "Adaptive height",
+      "label": "Aanpasbare hoogte",
       "default": false,
-      "info": "Only available if Slides per page is set to 1."
+      "info": "Alleen beschikbaar als Dia's per pagina is ingesteld op 1."
     },
     {
       "type": "select",
@@ -688,15 +688,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "Positie punten"
     },
     {
       "type": "select",
@@ -704,41 +704,41 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "Aan de zijkanten van de slider"
         }
       ],
       "default": "sides",
-      "label": "Arrows position"
+      "label": "Positie pijlen"
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "Mobiel"
     },
     {
       "type": "checkbox",
       "id": "slider_mobile",
-      "label": "Enable mobile slider",
+      "label": "Mobiele slider inschakelen",
       "default": true,
-      "info": "The settings bellow are applied if this option is checked"
+      "info": "De onderstaande instellingen worden toegepast als deze optie is aangevinkt"
     },
     {
       "type": "checkbox",
       "id": "enable_mobile_preview",
-      "label": "Preview of prev & next slides",
+      "label": "Voorvertoning van vorige & volgende dia's",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "mobile_adaptive_height",
-      "label": "Adaptive height",
+      "label": "Aanpasbare hoogte",
       "default": false
     },
     {
@@ -747,15 +747,15 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         }
       ],
       "default": "under",
-      "label": "Dots position"
+      "label": "Positie punten"
     },
     {
       "type": "select",
@@ -763,23 +763,23 @@
       "options": [
         {
           "value": "hidden",
-          "label": "Hidden"
+          "label": "Verborgen"
         },
         {
           "value": "under",
-          "label": "Under the slider"
+          "label": "Onder de slider"
         },
         {
           "value": "sides",
-          "label": "On sides of the slider"
+          "label": "Aan de zijkanten van de slider"
         }
       ],
       "default": "under",
-      "label": "Arrows position"
+      "label": "Positie pijlen"
     },
     {
       "type": "header",
-      "content": "Reviews"
+      "content": "Beoordelingen"
     },
     {
       "type": "header",
@@ -807,29 +807,30 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt Achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "header",
+      "content": "Aangepast kleurschema kaarten",
       "content": "Custom cards color scheme",
       "info": "Applied if Cards color scheme setting is set to Custom."
     },
