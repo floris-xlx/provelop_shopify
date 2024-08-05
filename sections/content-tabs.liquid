@@ -45,8 +45,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="page-width section-{{ section.id }}-padding">
@@ -188,13 +188,13 @@
 
 {% schema %}
 {
-  "name": "Content tabs",
+  "name": "Inhoud tabbladen",
   "settings": [
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -203,35 +203,35 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "inline_richtext",
       "id": "title",
-      "default": "Content tabs",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "default": "Inhoud tabbladen",
+      "label": "Kop",
+      "info": "Vet bepaalde woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kleur markering kop",
       "default": "#6D388B"
     },
     {
@@ -240,7 +240,7 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
@@ -248,16 +248,16 @@
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "richtext",
       "id": "text",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "select",
@@ -273,28 +273,28 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Invers"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurenschema",
+      "info": "Aangepast kleurenschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
-      "content": "Tabs"
+      "content": "Tabbladen"
     },
     {
       "type": "select",
@@ -302,11 +302,11 @@
       "options": [
         {
           "value": "80",
-          "label": "Extra small"
+          "label": "Extra klein"
         },
         {
           "value": "100",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "120",
@@ -314,11 +314,11 @@
         },
         {
           "value": "normal",
-          "label": "Normal"
+          "label": "Normaal"
         }
       ],
       "default": "100",
-      "label": "Container width"
+      "label": "Container breedte"
     },
     {
       "type": "select",
@@ -334,24 +334,24 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Invers"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "accent-1",
-      "label": "Tab buttons color",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleur tabknoppen",
+      "info": "Aangepast kleurenschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "range",
@@ -360,7 +360,7 @@
       "max": 40,
       "step": 2,
       "unit": "px",
-      "label": "Buttons corner radius",
+      "label": "Hoekradius knoppen",
       "default": 6
     },
     {
@@ -369,15 +369,15 @@
       "options": [
         {
           "value": "outlined",
-          "label": "Outlined"
+          "label": "Omlijnd"
         },
         {
           "value": "shadow",
-          "label": "Drop shadow"
+          "label": "Schaduw"
         }
       ],
       "default": "outlined",
-      "label": "Buttons container style"
+      "label": "Stijl knoppencontainer"
     },
     {
       "type": "select",
@@ -385,16 +385,16 @@
       "options": [
         {
           "value": "opacity",
-          "label": "Opacity"
+          "label": "Doorzichtigheid"
         },
         {
           "value": "moving",
-          "label": "Moving"
+          "label": "Bewegend"
         }
       ],
       "default": "moving",
-      "label": "Active button animation type",
-      "info": "Choosing \"Moving\" is only recommended if all your buttons fit in one row."
+      "label": "Type actieve knopanimatie",
+      "info": "Kiezen voor \"Bewegend\" wordt alleen aanbevolen als al je knoppen in één rij passen."
     },
     {
       "type": "header",
@@ -406,15 +406,15 @@
       "options": [
         {
           "value": "vertical",
-          "label": "Vertical"
+          "label": "Verticaal"
         },
         {
           "value": "horizontal",
-          "label": "Horizontal"
+          "label": "Horizontaal"
         }
       ],
       "default": "horizontal",
-      "label": "Desktop header layout"
+      "label": "Desktop koplay-out"
     },
     {
       "type": "range",
@@ -423,19 +423,19 @@
       "max": 30,
       "step": 1,
       "unit": "px",
-      "label": "Buttons font size",
+      "label": "Lettergrootte knoppen",
       "default": 15
     },
     {
       "type": "checkbox",
       "id": "desktop_full_size_buttons",
-      "label": "Expand buttons to full width",
+      "label": "Knoppen naar volle breedte uitbreiden",
       "default": false,
-      "info": "Evently expands all buttons to fit whole container width. Recommended only if all your buttons fit in one row."
+      "info": "Eventueel worden alle knoppen uitgebreid om de volledige containerbreedte te passen. Alleen aanbevolen als al je knoppen in één rij passen."
     },
     {
       "type": "header",
-      "content": "Mobile"
+      "content": "Mobiel"
     },
     {
       "type": "range",
@@ -444,15 +444,15 @@
       "max": 25,
       "step": 1,
       "unit": "px",
-      "label": "Buttons font size",
+      "label": "Lettergrootte knoppen",
       "default": 13
     },
     {
       "type": "checkbox",
       "id": "mobile_full_size_buttons",
-      "label": "Expand buttons to full width",
+      "label": "Knoppen naar volle breedte uitbreiden",
       "default": true,
-      "info": "Evently expands all buttons to fit whole container width. Recommended only if all your buttons fit in one row."
+      "info": "Eventueel worden alle knoppen uitgebreid om de volledige containerbreedte te passen. Alleen aanbevolen als al je knoppen in één rij passen."
     },
     {
       "type": "header",
@@ -480,61 +480,61 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurenschema",
+      "info": "Toegepast als de instelling Kleurenschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradient achtergrond",
+      "info": "Als toegevoegd, vervangt het de achtergrondkleur waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_background",
       "default": "#dd1d1d",
-      "label": "Solid button background"
+      "label": "Achtergrond vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_text",
       "default": "#ffffff",
-      "label": "Solid button label"
+      "label": "Label vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_outline_button",
       "default": "#dd1d1d",
-      "label": "Outline button"
+      "label": "Omlijning knop"
     },
     {
       "type": "header",
-      "content": "Custom tab buttons color",
-      "info": "Applied if Tab buttons color setting is set to Custom."
+      "content": "Aangepaste kleur tabknoppen",
+      "info": "Toegepast als de instelling Kleur tabknoppen is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_tabs_color",
       "default": "#000000",
-      "label": "Tab buttons & conntainer border color"
+      "label": "Kleur tabknoppen & container randkleur"
     },
     {
       "type": "color",
       "id": "custom_tabs_color_label",
       "default": "#FFFFFF",
-      "label": "Active button label color"
+      "label": "Kleur actieve knoplabel"
     }
   ],
   "blocks": [
@@ -544,25 +544,25 @@
       "settings": [
         {
           "type": "header",
-          "content": "Tab button"
+          "content": "Tab knop"
         },
         {
           "type": "inline_richtext",
           "id": "btn_label",
-          "label": "Tab button label",
-          "default": "Tab button"
+          "label": "Tab knop label",
+          "default": "Tab knop"
         },
         {
           "type": "text",
           "id": "btn_icon",
-          "label": "Icon",
-          "info": "[View all available icons](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
+          "label": "Icoon",
+          "info": "[Bekijk alle beschikbare iconen](https:\/\/fonts.google.com\/icons?icon.set=Material+Symbols&icon.platform=web)."
         },
         {
           "type": "checkbox",
           "id": "filled_btn_icon",
           "default": false,
-          "label": "Filled icon"
+          "label": "Vervulde icoon"
         },
         {
           "type": "header",
@@ -571,11 +571,11 @@
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Image"
+          "label": "Afbeelding"
         },
         {
           "type": "header",
-          "content": "Or"
+          "content": "Of"
         },
         {
           "type": "video",
@@ -585,14 +585,14 @@
         {
           "type": "checkbox",
           "id": "loop",
-          "label": "Video looping",
+          "label": "Video herhalen",
           "default": false
         },
         {
           "type": "checkbox",
           "id": "muted_autoplay",
-          "label": "Muted autoplay",
-          "info": "Use this option instead of adding GIFs. The quality is better and the loading time is much quicker. Alternatively, if you disable this option, a play button will be displayed."
+          "label": "Stille autoplay",
+          "info": "Gebruik deze optie in plaats van GIF's toe te voegen. De kwaliteit is beter en de laadtijd is veel sneller. Als je deze optie uitschakelt, wordt een afspeelknop weergegeven."
         },
         {
           "type": "select",
@@ -620,29 +620,29 @@
             }
           ],
           "default": "accent-1",
-          "label": "Play button color scheme"
+          "label": "Kleurenschema afspeelknop"
         },
         {
           "type": "checkbox",
           "id": "btn_animation",
-          "label": "Enable button ripple animation",
+          "label": "Schakel knop ripple-animatie in",
           "default": false
         },
         {
           "type": "header",
-          "content": "Content"
+          "content": "Inhoud"
         },
         {
           "type": "inline_richtext",
           "id": "title",
-          "default": "Tab heading",
-          "label": "Heading",
-          "info": "Bold certain words to highlight them with a different color."
+          "default": "Tab kop",
+          "label": "Kop",
+          "info": "Vet bepaalde woorden om ze met een andere kleur te markeren."
         },
         {
           "type": "color",
           "id": "title_highlight_color",
-          "label": "Heading highlight color",
+          "label": "Kleur markering kop",
           "default": "#6D388B"
         },
         {
@@ -651,11 +651,11 @@
           "options": [
             {
               "value": "h3",
-              "label": "Extra small"
+              "label": "Extra klein"
             },
             {
               "value": "h2",
-              "label": "Small"
+              "label": "Klein"
             },
             {
               "value": "h1",
@@ -663,22 +663,22 @@
             },
             {
               "value": "h0",
-              "label": "Large"
+              "label": "Groot"
             }
           ],
           "default": "h1",
-          "label": "Heading size"
+          "label": "Kopgrootte"
         },
         {
           "type": "richtext",
           "id": "text",
-          "label": "Text",
-          "default": "<p>Use this section to display different benefits or different products that are sorted by clickable tabs.</p>"
+          "label": "Tekst",
+          "default": "<p>Gebruik deze sectie om verschillende voordelen of verschillende producten weer te geven die zijn gesorteerd op klikbare tabbladen.</p>"
         },
         {
           "type": "text",
           "id": "button_label",
-          "default": "Button label",
+          "default": "Knoplabel",
           "label": "t:sections.slideshow.blocks.slide.settings.button_label.label",
           "info": "t:sections.slideshow.blocks.slide.settings.button_label.info"
         },
@@ -696,23 +696,23 @@
         {
           "type": "text",
           "id": "atc_button_label",
-          "label": "Add to Cart button label",
-          "info": "Leave the label blank to hide the Add to Cart button."
+          "label": "Voeg toe aan winkelwagentje knoplabel",
+          "info": "Laat het label leeg om de Voeg toe aan winkelwagentje knop te verbergen."
         },
         {
           "type": "checkbox",
           "id": "atc_skip_cart",
-          "label": "ATC Custom product skip cart"
+          "label": "ATC Aangepast product overslaan winkelwagentje"
         },
         {
           "type": "product",
           "id": "product",
-          "label": "Add to Cart product",
-          "info": "If empty, the product from the product page will be added in the cart (with the selected variant and quantity)."
+          "label": "Voeg toe aan winkelwagentje product",
+          "info": "Als leeg, wordt het product van de productpagina aan het winkelwagentje toegevoegd (met de geselecteerde variant en hoeveelheid)."
         },
         {
           "type": "header",
-          "content": "Desktop layout"
+          "content": "Desktop lay-out"
         },
         {
           "type": "select",
@@ -720,15 +720,15 @@
           "options": [
             {
               "value": "half",
-              "label": "Half of the tab"
+              "label": "De helft van het tabblad"
             },
             {
               "value": "full",
-              "label": "Full width of the tab"
+              "label": "Volledige breedte van het tabblad"
             }
           ],
           "default": "half",
-          "label": "Desktop media (image/video) width"
+          "label": "Desktop media (afbeelding/video) breedte"
         },
         {
           "type": "select",
@@ -736,15 +736,15 @@
           "options": [
             {
               "value": "media_first",
-              "label": "Media first"
+              "label": "Media eerst"
             },
             {
               "value": "media_second",
-              "label": "Media second"
+              "label": "Media tweede"
             }
           ],
           "default": "media_first",
-          "label": "Desktop media placement"
+          "label": "Desktop media plaatsing"
         },
         {
           "type": "select",
@@ -752,23 +752,23 @@
           "options": [
             {
               "value": "left",
-              "label": "Left"
+              "label": "Links"
             },
             {
               "value": "center",
-              "label": "Center"
+              "label": "Centrum"
             },
             {
               "value": "right",
-              "label": "Right"
+              "label": "Rechts"
             }
           ],
           "default": "center",
-          "label": "Desktop text alignment"
+          "label": "Desktop tekstuitlijning"
         },
         {
           "type": "header",
-          "content": "Mobile layout"
+          "content": "Mobiele lay-out"
         },
         {
           "type": "select",
@@ -776,15 +776,15 @@
           "options": [
             {
               "value": "media_first",
-              "label": "Media first"
+              "label": "Media eerst"
             },
             {
               "value": "media_second",
-              "label": "Media second"
+              "label": "Media tweede"
             }
           ],
           "default": "media_first",
-          "label": "Mobile media placement"
+          "label": "Mobiele media plaatsing"
         },
         {
           "type": "select",
@@ -792,26 +792,26 @@
           "options": [
             {
               "value": "mobile-left",
-              "label": "Left"
+              "label": "Links"
             },
             {
               "value": "mobile-center",
-              "label": "Center"
+              "label": "Centrum"
             },
             {
               "value": "mobile-right",
-              "label": "Right"
+              "label": "Rechts"
             }
           ],
           "default": "mobile-center",
-          "label": "Mobile text alignment"
+          "label": "Mobiele tekstuitlijning"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Content tabs",
+      "name": "Inhoud tabbladen",
       "blocks": [
         {
           "type": "tab"
