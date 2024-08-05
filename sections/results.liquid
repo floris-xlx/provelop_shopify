@@ -25,8 +25,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="page-width section-{{ section.id }}-padding">
@@ -168,8 +168,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroep om 2 secties samen te voegen. ID kan ook in een knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -178,35 +178,35 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "header",
-      "content": "General"
+      "content": "Algemeen"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "default": "Results",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Koptekst",
+      "info": "Maak bepaalde woorden vet om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Koptekst markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -215,40 +215,40 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Koptekst grootte"
     },
     {
       "type": "richtext",
       "id": "text",
-      "default": "<p>Talk about results of your customers and how your product improved their life.</p>",
-      "label": "Text"
+      "default": "<p>Praat over de resultaten van uw klanten en hoe uw product hun leven heeft verbeterd.</p>",
+      "label": "Tekst"
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "Afbeelding"
     },
     {
       "type": "paragraph",
-      "content": "Or"
+      "content": "Of"
     },
     {
       "type": "video",
       "id": "video",
       "label": "Video",
-      "info": "Use autoplay mp4 instead of GIFs & animated WEBPs."
+      "info": "Gebruik autoplay mp4 in plaats van GIF's en geanimeerde WEBP's."
     },
     {
       "type": "select",
@@ -264,28 +264,28 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt onderaan de sectie-instellingen bewerkt."
     },
     {
       "type": "header",
-      "content": "Results"
+      "content": "Resultaten"
     },
     {
       "type": "select",
@@ -293,26 +293,26 @@
       "options": [
         {
           "value": "results_first",
-          "label": "Results first"
+          "label": "Resultaten eerst"
         },
         {
           "value": "results_second",
-          "label": "Results second"
+          "label": "Resultaten tweede"
         }
       ],
       "default": "results_second",
-      "label": "Desktop results placement"
+      "label": "Desktop resultaten plaatsing"
     },
     {
       "type": "inline_richtext",
       "id": "results_headline",
-      "default": "Results heading",
-      "label": "Results heading"
+      "default": "Resultaten kop",
+      "label": "Resultaten kop"
     },
     {
       "type": "color",
       "id": "results_title_highlight_color",
-      "label": "Results heading highlight color",
+      "label": "Resultaten kop markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -321,24 +321,24 @@
       "options": [
         {
           "value": "h3",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h2",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h1",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h2",
-      "label": "Results heading size"
+      "label": "Resultaten kop grootte"
     },
     {
       "type": "richtext",
       "id": "results_text",
-      "label": "Results text"
+      "label": "Resultaten tekst"
     },
     {
       "type": "select",
@@ -346,21 +346,21 @@
       "options": [
         {
           "value": "left",
-          "label": "Left"
+          "label": "Links"
         },
         {
           "value": "center",
-          "label": "Center"
+          "label": "Midden"
         }
       ],
       "default": "left",
-      "label": "Results heading & text alignment"
+      "label": "Resultaten kop & tekst uitlijning"
     },
     {
       "type": "richtext",
       "id": "caption",
-      "default": "<p>Caption about the results and/or link for their proof.</p>",
-      "label": "Caption"
+      "default": "<p>Bijschrift over de resultaten en/of link voor hun bewijs.</p>",
+      "label": "Bijschrift"
     },
     {
       "type": "text",
@@ -382,19 +382,19 @@
     {
       "type": "text",
       "id": "atc_button_label",
-      "label": "Add to Cart button label",
-      "info": "Leave the label blank to hide the Add to Cart button."
+      "label": "Toevoegen aan winkelwagen knoplabel",
+      "info": "Laat het label leeg om de Toevoegen aan winkelwagen knop te verbergen."
     },
     {
       "type": "product",
       "id": "atc_product",
-      "label": "ATC Custom product",
-      "info": "NOTE: If left blank, the button will add the main product from the product page to the cart, including the selected variant, quantity, and any upsells."
+      "label": "ATC Aangepast product",
+      "info": "OPMERKING: Als dit leeg wordt gelaten, voegt de knop het hoofdproduct van de productpagina toe aan de winkelwagen, inclusief de geselecteerde variant, hoeveelheid en eventuele upsells."
     },
     {
       "type": "checkbox",
       "id": "atc_skip_cart",
-      "label": "ATC Custom product skip cart"
+      "label": "ATC Aangepast product winkelwagen overslaan"
     },
     {
       "type": "header",
@@ -422,56 +422,56 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "This will be used if the Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Dit wordt gebruikt als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "When provided, it will override the Background color where applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien opgegeven, zal het de Achtergrondkleur overschrijven waar van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#2E2A39",
-      "label": "Text"
+      "label": "Tekst"
     },
     {
       "type": "color",
       "id": "custom_colors_accent",
       "default": "#dd1d1d",
-      "label": "Accents"
+      "label": "Accenten"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_background",
       "default": "#dd1d1d",
-      "label": "Solid button background"
+      "label": "Achtergrond van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_solid_button_text",
       "default": "#ffffff",
-      "label": "Solid button label"
+      "label": "Label van vaste knop"
     },
     {
       "type": "color",
       "id": "custom_colors_outline_button",
       "default": "#dd1d1d",
-      "label": "Outline button"
+      "label": "Omlijning van knop"
     }
   ],
   "blocks": [
     {
       "type": "row",
-      "name": "Result row",
+      "name": "Resultaat rij",
       "settings": [
         {
           "type": "range",
@@ -485,8 +485,8 @@
         {
           "type": "richtext",
           "id": "row_text",
-          "default": "<p>Observed a significant improvement in their life due to this product.</p>",
-          "label": "Result"
+          "default": "<p>Significante verbetering in hun leven waargenomen door dit product.</p>",
+          "label": "Resultaat"
         }
       ]
     }
