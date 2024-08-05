@@ -65,16 +65,16 @@ class CartDrawer extends HTMLElement {
     });
 
     // Define the onKeyUpEscape function
-function onKeyUpEscape(event) {
-    if (event.key === 'Escape') {
-        // Your logic when Escape key is pressed
-        console.log('Escape key was pressed');
-        // You can add more code here to handle the Escape key press event
+    function onKeyUpEscape(event) {
+        if (event.key === 'Escape') {
+            // Your logic when Escape key is pressed
+            console.log('Escape key was pressed');
+            // You can add more code here to handle the Escape key press event
+        }
     }
-}
-
-// Assuming cartDrawerNote is already defined
-cartDrawerNote.parentElement.addEventListener('keyup', onKeyUpEscape);
+    
+    // Assuming cartDrawerNote is already defined
+    cartDrawerNote.parentElement.addEventListener('keyup', onKeyUpEscape);
   }
 
   renderContents(parsedState) {
