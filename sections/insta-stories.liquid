@@ -21,8 +21,8 @@
 <div class="color-scheme-{{ section.id }} color-{{ section.settings.color_scheme }} gradient content-for-grouping animate-section animate--hidden {{ section.settings.visibility }}">
   {% if section.settings.display_id %}
     <copy-button class='section-id-btn button' data-content="#shopify-section-{{ section.id }}" data-success="false">
-      <span class="copy-text">Click to copy section ID</span>
-      <span class="copy-success">ID copied successfully!</span>
+      <span class="copy-text">Klik om sectie-ID te kopiëren</span>
+      <span class="copy-success">ID succesvol gekopieerd!</span>
     </copy-button>
   {% endif %}
   <div class="page-width section-{{ section.id }}-padding">
@@ -326,8 +326,8 @@
     {
       "type": "checkbox",
       "id": "display_id",
-      "label": "Display section ID",
-      "info": "ID is used in the Sections group section to merge 2 sections. ID can also be put inside any button link and the button will scroll to this section.",
+      "label": "Sectie-ID weergeven",
+      "info": "ID wordt gebruikt in de sectiegroepsectie om 2 secties samen te voegen. ID kan ook in elke knoplink worden geplaatst en de knop zal naar deze sectie scrollen.",
       "default": false
     },
     {
@@ -336,31 +336,31 @@
       "options": [
         {
           "value": "desktop-hidden",
-          "label": "Mobile only"
+          "label": "Alleen mobiel"
         },
         {
           "value": "mobile-hidden",
-          "label": "Desktop only"
+          "label": "Alleen desktop"
         },
         {
           "value": "always-display",
-          "label": "All devices"
+          "label": "Alle apparaten"
         }
       ],
-      "label": "Display on",
+      "label": "Weergeven op",
       "default": "always-display"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "default": "Instagram stories",
-      "label": "Heading",
-      "info": "Bold certain words to highlight them with a different color."
+      "label": "Kop",
+      "info": "Vetgedrukte woorden om ze met een andere kleur te markeren."
     },
     {
       "type": "color",
       "id": "title_highlight_color",
-      "label": "Heading highlight color",
+      "label": "Kop markeerkleur",
       "default": "#6D388B"
     },
     {
@@ -369,25 +369,25 @@
       "options": [
         {
           "value": "h2",
-          "label": "Small"
+          "label": "Klein"
         },
         {
           "value": "h1",
-          "label": "Medium"
+          "label": "Middel"
         },
         {
           "value": "h0",
-          "label": "Large"
+          "label": "Groot"
         }
       ],
       "default": "h1",
-      "label": "Heading size"
+      "label": "Kopgrootte"
     },
     {
       "type": "text",
       "id": "text",
-      "label": "Text",
-      "default": "Display images and testimonials in a format familiar to your customers."
+      "label": "Tekst",
+      "default": "Toon afbeeldingen en getuigenissen in een formaat dat uw klanten bekend is."
     },
     {
       "type": "select",
@@ -403,32 +403,32 @@
         },
         {
           "value": "background-1",
-          "label": "Background 1"
+          "label": "Achtergrond 1"
         },
         {
           "value": "background-2",
-          "label": "Background 2"
+          "label": "Achtergrond 2"
         },
         {
           "value": "inverse",
-          "label": "Inverse"
+          "label": "Omgekeerd"
         },
         {
           "value": "custom",
-          "label": "Custom"
+          "label": "Aangepast"
         }
       ],
       "default": "background-1",
-      "label": "Color scheme",
-      "info": "Custom color scheme is edited at the bottom of section settings."
+      "label": "Kleurschema",
+      "info": "Aangepast kleurschema wordt bewerkt onderaan de sectie-instellingen."
     },
     {
       "type": "header",
-      "content": "Stories"
+      "content": "Verhalen"
     },
     {
       "type": "paragraph",
-      "content": "NOTE: On touch devices, arrows on the slider for the story opener buttons are automatically changed to SWIPE/DRAG function for the best mobile experience. Swipe function to skip stories is also included."
+      "content": "OPMERKING: Op aanraakapparaten worden pijlen op de schuifregelaar voor de verhaalopenerknoppen automatisch gewijzigd in SWIPE/DRAG-functie voor de beste mobiele ervaring. Swipe-functie om verhalen over te slaan is ook inbegrepen."
     },
     {
       "type": "range",
@@ -437,7 +437,7 @@
       "max": 15,
       "step": 1,
       "unit": "sec",
-      "label": "Image autoplay speed",
+      "label": "Afbeelding autoplay snelheid",
       "default": 10
     },
     {
@@ -466,69 +466,69 @@
     },
     {
       "type": "header",
-      "content": "Custom color scheme",
-      "info": "Applied if Color scheme setting is set to Custom."
+      "content": "Aangepast kleurschema",
+      "info": "Toegepast als de instelling Kleurschema is ingesteld op Aangepast."
     },
     {
       "type": "color",
       "id": "custom_colors_background",
       "default": "#FFFFFF",
-      "label": "Background color"
+      "label": "Achtergrondkleur"
     },
     {
       "type": "color_background",
       "id": "custom_gradient_background",
-      "label": "Gradient background",
-      "info": "If added, replaces Background color when applicable."
+      "label": "Gradiënt achtergrond",
+      "info": "Indien toegevoegd, vervangt de achtergrondkleur indien van toepassing."
     },
     {
       "type": "color",
       "id": "custom_colors_text",
       "default": "#121212",
-      "label": "Text"
+      "label": "Tekst"
     }
   ],
   "blocks": [
     {
       "type": "user",
-      "name": "User post",
+      "name": "Gebruikerspost",
       "settings": [
         {
           "type": "text",
           "id": "username",
-          "label": "User name",
+          "label": "Gebruikersnaam",
           "default": "shrinetheme"
         },
         {
           "type": "checkbox",
           "id": "verified",
-          "label": "Verified account",
+          "label": "Geverifieerd account",
           "default": false
         },
         {
           "type": "image_picker",
           "id": "profile_picture",
-          "label": "Profile picture"
+          "label": "Profielfoto"
         },
         {
           "type": "checkbox",
           "id": "close_friends",
-          "label": "Close friends story",
+          "label": "Verhaal voor goede vrienden",
           "default": false
         },
         {
           "type": "header",
-          "content": "Story #1"
+          "content": "Verhaal #1"
         },
         {
           "type": "image_picker",
           "id": "story_1_image",
-          "label": "Story #1 Image"
+          "label": "Verhaal #1 Afbeelding"
         },
         {
           "type": "video",
           "id": "story_1_video",
-          "label": "Story #1 Video"
+          "label": "Verhaal #1 Video"
         },
         {
           "type": "select",
@@ -536,43 +536,43 @@
           "options": [
             {
               "value": "contain",
-              "label": "Contain"
+              "label": "Bevatten"
             },
             {
               "value": "cover",
-              "label": "Cover"
+              "label": "Bedekken"
             }
           ],
           "default": "contain",
-          "label": "Story #1 Media fit",
-          "info": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          "label": "Verhaal #1 Media fit",
+          "info": "Bevatten behoudt de beeldverhouding van de media, bedekken vult de hele verhaalbox."
         },
         {
           "type": "text",
           "id": "story_1_time_posted",
-          "label": "Story #1 Time posted",
+          "label": "Verhaal #1 Tijd gepost",
           "default": "10m"
         },
         {
           "type": "color",
           "id": "story_1_bg",
-          "label": "Story #1 Background",
+          "label": "Verhaal #1 Achtergrond",
           "default": "#282828",
-          "info": "Visible if Media fit is set to Contain"
+          "info": "Zichtbaar als Media fit is ingesteld op Bevatten"
         },
         {
           "type": "header",
-          "content": "Story #2"
+          "content": "Verhaal #2"
         },
         {
           "type": "image_picker",
           "id": "story_2_image",
-          "label": "Story #2 Image"
+          "label": "Verhaal #2 Afbeelding"
         },
         {
           "type": "video",
           "id": "story_2_video",
-          "label": "Story #2 Video"
+          "label": "Verhaal #2 Video"
         },
         {
           "type": "select",
@@ -580,43 +580,43 @@
           "options": [
             {
               "value": "contain",
-              "label": "Contain"
+              "label": "Bevatten"
             },
             {
               "value": "cover",
-              "label": "Cover"
+              "label": "Bedekken"
             }
           ],
           "default": "contain",
-          "label": "Story #2 Media fit",
-          "info": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          "label": "Verhaal #2 Media fit",
+          "info": "Bevatten behoudt de beeldverhouding van de media, bedekken vult de hele verhaalbox."
         },
         {
           "type": "text",
           "id": "story_2_time_posted",
-          "label": "Story #2 Time posted",
+          "label": "Verhaal #2 Tijd gepost",
           "default": "1h"
         },
         {
           "type": "color",
           "id": "story_2_bg",
-          "label": "Story #2 Background",
+          "label": "Verhaal #2 Achtergrond",
           "default": "#282828",
-          "info": "Visible if Media fit is set to Contain"
+          "info": "Zichtbaar als Media fit is ingesteld op Bevatten"
         },
         {
           "type": "header",
-          "content": "Story #3"
+          "content": "Verhaal #3"
         },
         {
           "type": "image_picker",
           "id": "story_3_image",
-          "label": "Story #3 Image"
+          "label": "Verhaal #3 Afbeelding"
         },
         {
           "type": "video",
           "id": "story_3_video",
-          "label": "Story #3 Video"
+          "label": "Verhaal #3 Video"
         },
         {
           "type": "select",
@@ -624,29 +624,29 @@
           "options": [
             {
               "value": "contain",
-              "label": "Contain"
+              "label": "Bevatten"
             },
             {
               "value": "cover",
-              "label": "Cover"
+              "label": "Bedekken"
             }
           ],
           "default": "contain",
-          "label": "Story #3 Media fit",
-          "info": "Contain preserves media's aspect ratio, cover fills out the whole story box."
+          "label": "Verhaal #3 Media fit",
+          "info": "Bevatten behoudt de beeldverhouding van de media, bedekken vult de hele verhaalbox."
         },
         {
           "type": "text",
           "id": "story_3_time_posted",
-          "label": "Story #3 Time posted",
+          "label": "Verhaal #3 Tijd gepost",
           "default": "4h"
         },
         {
           "type": "color",
           "id": "story_3_bg",
-          "label": "Story #3 Background",
+          "label": "Verhaal #3 Achtergrond",
           "default": "#282828",
-          "info": "Visible if Media fit is set to Contain"
+          "info": "Zichtbaar als Media fit is ingesteld op Bevatten"
         }
       ]
     }
